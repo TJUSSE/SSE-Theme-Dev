@@ -436,10 +436,15 @@ td {
 .page-index {
   display: block;
   position: relative;
+  width: 100%;
+  height: 100%;
+  background-image: url("../resources/temp_bg.jpg");
 }
 .page-index header {
   display: block;
+  position: relative;
   height: 67px;
+  width: 100%;
   color: #fff;
 }
 .page-index .nav-title {
@@ -450,7 +455,9 @@ td {
   width: 25%;
   text-align: center;
   vertical-align: middle;
+  font-size: 1.22em;
   background: rgba(0,0,0,0.52);
+  cursor: pointer;
 }
 .page-index .nav-title a {
   -webkit-transition: all 0.5s ease-out;
@@ -461,4 +468,72 @@ td {
 .page-index .nav-title :hover,
 .page-index .nav-title :focus {
   background-color: rgba(0,0,0,0.65);
+}
+.page-index .nav-lists-container {
+  display: inline-block;
+  position: relative;
+  height: 100%;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  width: 100%;
+}
+.page-index .nav-list {
+  display: block;
+  float: left;
+  width: 25%;
+  height: 100%;
+  cursor: pointer;
+  background: rgba(0,0,0,0.52);
+  -webkit-transition: all 0.5s ease-out;
+          transition: all 0.5s ease-out;
+}
+.page-index .nav-list ul {
+  height: 100%;
+  font-size: 1.08em;
+  list-style: none;
+}
+.page-index .list-item-primary,
+.page-index .list-item-secondary {
+  display: block;
+  width: 95%;
+  height: 53px;
+  line-height: 53px;
+  vertical-align: middle;
+  padding-left: 5%;
+  color: #fff;
+  -webkit-transition: all 0.5s ease-out;
+          transition: all 0.5s ease-out;
+}
+.page-index .list-item-primary:hover,
+.page-index :focus {
+  width: 90%;
+  padding-left: 10%;
+  background-color: rgba(0,0,0,0.65);
+  color: #065f99;
+}
+.page-index .list-item-secondary {
+  width: 90%;
+  padding-left: 10%;
+}
+.page-index .list-item-secondary:hover,
+.page-index :focus {
+  width: 85%;
+  padding-left: 15%;
+  color: #065f99;
+  background-color: rgba(0,0,0,0.65);
+}
+.page-index footer {
+  display: block;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 5%;
+  background: rgba(0,0,0,0.52);
+}
+.page-index .list-hidden {
+  height: 0px;
+}
+.page-index .list-hidden ul {
+  display: none;
+  opacity: 0;
 }

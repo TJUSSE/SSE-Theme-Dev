@@ -2,27 +2,47 @@
    Created by joshoy on 15-5-21.
 <!doctype html>
 
-html
+html.page-index-preset
   head
     meta(charset="utf-8")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    script(type="text/javascript", src="bower_components/jquery/dist/jquery.min.js")
     link(rel="stylesheet", type="text/css", href="css/style.css")
+    script(type="text/javascript", src="js/page/index.js")
     title 欢迎光临同济大学软件学院
-  body
-    .page-index
+  body.page-index
+
       header
-        .nav-title
+        .nav-title#nav-title-0
           a 了解学院
-        .nav-title
+        .nav-title#nav-title-1
           a 学院新闻
-        .nav-title
+        .nav-title#nav-title-2
           a 学院通知
-        .nav-title
+        .nav-title#nav-title-3
           a 其他链接
       .nav-lists-container
-         .nav-list
-         .nav-list
-         .nav-list
+         .nav-list#nav-list-0
+           ul
+             li.list-item-primary 本科生
+             li.list-item-secondary 2014级本科生
+             li.list-item-secondary 2013级本科生
+             li.list-item-secondary 2012级本科生
+             li.list-item-secondary 2011级本科生
+             li.list-item-secondary 已毕业本科生
+             li.list-item-primary 研究生
+             li.list-item-primary 博士生
+         .nav-list#nav-list-1
+           ul
+             li.list-item-primary 本科生
+             li.list-item-secondary 2014级本科生
+             li.list-item-secondary 2013级本科生
+             li.list-item-secondary 2012级本科生
+             li.list-item-secondary 2011级本科生
+             li.list-item-secondary 已毕业本科生
+             li.list-item-primary 研究生
+             li.list-item-primary 博士生
+         .nav-list#nav-list-2
             ul
               li.list-item-primary 本科生
               li.list-item-secondary 2014级本科生
@@ -34,5 +54,6 @@ html
               li.list-item-primary 博士生
               li.list-item-primary International
               li.list-item-primary 教师
-         .nav-list
+         .nav-list#nav-list-3
+
       footer
