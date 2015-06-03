@@ -40,6 +40,7 @@
 
   .nav-lists-container
     display inline-block
+    z-index 3
     position relative
     // top $nav-height
     height 100%
@@ -49,6 +50,7 @@
 
   .nav-list
     display block
+    z-index 4
     float left
     width 25%
     height 100%
@@ -86,6 +88,30 @@
     padding-left 15%
     color $highlight-blue
     background-color: $background-black-darken
+
+  // Logo part
+  .logo-container
+    z-index 1
+    position fixed
+    bottom 20%
+    right 12%
+    width 572px
+    height 284px
+    background $background-black
+
+  .blue-bar
+    position relative
+    width 100%
+    height 3%
+    background $highlight-blue
+
+  .logo-main-part
+    margin-top 40px
+    margin-left 40px
+
+  .tj-logo
+    width 110px
+    height 110px
 
   footer
     display block

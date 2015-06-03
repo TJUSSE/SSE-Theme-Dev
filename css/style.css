@@ -471,6 +471,7 @@ td {
 }
 .page-index .nav-lists-container {
   display: inline-block;
+  z-index: 3;
   position: relative;
   height: 100%;
   margin: 0 0 0 0;
@@ -479,6 +480,7 @@ td {
 }
 .page-index .nav-list {
   display: block;
+  z-index: 4;
   float: left;
   width: 25%;
   height: 100%;
@@ -521,6 +523,29 @@ td {
   padding-left: 15%;
   color: #065f99;
   background-color: rgba(0,0,0,0.65);
+}
+.page-index .logo-container {
+  z-index: 1;
+  position: fixed;
+  bottom: 20%;
+  right: 12%;
+  width: 572px;
+  height: 284px;
+  background: rgba(0,0,0,0.52);
+}
+.page-index .blue-bar {
+  position: relative;
+  width: 100%;
+  height: 3%;
+  background: #065f99;
+}
+.page-index .logo-main-part {
+  margin-top: 40px;
+  margin-left: 40px;
+}
+.page-index .tj-logo {
+  width: 110px;
+  height: 110px;
 }
 .page-index footer {
   display: block;
