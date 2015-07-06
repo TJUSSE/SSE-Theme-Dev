@@ -12,6 +12,13 @@
       -ms-flex-pack: center;
           justify-content: center;
 }
+.blue-bar {
+  position: relative;
+  width: 100%;
+  height: 3%;
+  margin-top: 0;
+  background: #327299;
+}
 
 
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
@@ -522,7 +529,7 @@ td {
 }
 .page-index li:hover {
   background: rgba(0,0,0,0.65);
-  color: #065f99;
+  color: #327299;
 }
 .page-index .list-item-primary {
   padding-left: 15px;
@@ -556,12 +563,6 @@ td {
   height: 214px;
   background: rgba(0,0,0,0.52);
 }
-.page-index .blue-bar {
-  position: relative;
-  width: 100%;
-  height: 3%;
-  background: #065f99;
-}
 .page-index .logo-main-part {
   margin-top: 35px;
   margin-left: 45px;
@@ -569,4 +570,44 @@ td {
 .page-index .tj-logo {
   width: 85%;
   height: 35%;
+}
+.page-news .navigator {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  margin-top: 0px;
+  padding-top: 0px;
+  width: 100%;
+  height: 200px;
+  background: #ddd;
+}
+.page-news .content-wrap {
+  position: relative;
+  margin: 0 auto;
+  height: 100%;
+  width: 1250px;
+}
+.page-news .tj-logo {
+  float: left;
+  margin-left: 15px;
+  margin-top: 15px;
+  height: 80%;
+  width: 480px;
+}
+.page-news .nav-others {
+  position: relative;
+  float: right;
+  height: 97%;
+  width: 40%;
+}
+.page-news .nav-others-item {
+  position: relative;
+  float: right;
+  line-height: 190px;
+  font-size: 1.15em;
+  margin-right: 50px;
+}
+.page-news .nav-others-item a {
+  text-decoration: none;
+  color: #111;
 }
