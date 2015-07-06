@@ -1,131 +1,111 @@
 @require '../variable.styl'
 
 .page-index
-  display block
-  position relative
-  width 100%
-  height 100%
-  background-image url('../resources/temp_bg.jpg')
-
+  background url(../resources/bg.jpg) center center no-repeat
+  background-size cover
 
   header
-    display block
-    position relative
-    height $nav-height
-    width 100%
-    // height $nav-height
-    color #ffffff
+    position absolute
+    left: 0px
+    top: 0px
+    width: 100%
+    height: $nav-height
+    background $background-black
+
+  .content-wrap
+    position: relative
+    margin 0 auto
+    height 100%
+    width 1000px
 
   .nav-title
-    @extends .vertical-container
-
-    float left
-    margin auto
-    padding auto
-    height 100%
+    color: #ffffff
+    line-height $nav-height
     width 25%
-    text-align center
-    vertical-align middle
-    font-size $nav-main-item-font-size
-    background $background-black
+    float left
     cursor pointer
-    a
-      @extends .vertical-container
-      transition all 0.5s ease-out
-      height 100%
-      width 100%
+    text-align center
+    transition all .2s ease-out
 
-    :hover, :focus
-      background-color: $background-black-darken
+  .nav-title:hover
+    background $background-black-darken
 
   .nav-lists-container
-    display inline-block
-    z-index 3
-    position relative
-    // top $nav-height
-    height 100%
-    margin 0 0 0 0
-    padding 0 0 0 0
+    position absolute
+    top $nav-height
+    bottom $nav-height
+    left 0
+    display block
+    float left
     width 100%
 
   .nav-list
-    display block
-    z-index 4
-    float left
+    // background $background-black
+    position relative
     width 25%
     height 100%
-    cursor pointer
+    float left
+
+  .nav-list-inner
+    overflow hidden
     background $background-black
-    transition all 0.5s ease-out
-    ul
-      height 100%
-      font-size $list-item-primary-font-size
-      list-style none
+    width 100%
+    height 0
+    opacity 0
+    transition height .4s, opacity .4s
+    transition-timing-function cubic-bezier(0.215, 0.61, 0.355, 1)
+
+  .nav-list.nav-list-active .nav-list-inner, .nav-list:hover .nav-list-inner
+    height 100%
+    opacity 1
+
+  .nav-list-active
+    height 100%
+    opacity 1
+
+  ul
+    overflow hidden
+    top $nav-height
+    bottom $nav-height
+    left 0px
+    margin-top 0px
+    width 100%
+    height 100%
+
+
+  li
+    overflow hidden
+    padding-left 15px
+    line-height 28px
+    font-size 1.05em
+    line-height 35px
+    height 35px
+    transition all .2s linear;
+    cursor pointer
+    list-style none
+    color white
+
+  li:hover
+    background $background-black-darken
+    color $highlight-blue
 
   .list-item-primary
-    display block
-    width 95%
-    height $list-item-primary-line-height
-    line-height $list-item-primary-line-height
-    vertical-align middle
-    padding-left 5%
-    color white
-    transition all 0.5s ease-out
-
-  .list-item-primary:hover, :focus
-    width 90%
-    padding-left 10%
-    background-color: $background-black-darken
-    color $highlight-blue
+    padding-left 15px
+  .list-item-primary:hover
+    padding-left 25px
 
   .list-item-secondary
-    @extends .page-index .list-item-primary
-    width 90%
-    padding-left 10%
-
-  .list-item-secondary:hover, :focus
-    width 85%
-    padding-left 15%
-    color $highlight-blue
-    background-color: $background-black-darken
-
-  // Logo part
-  .logo-container
-    z-index 1
-    position fixed
-    bottom 20%
-    right 12%
-    width 572px
-    height 284px
-    background $background-black
-
-  .blue-bar
-    position relative
-    width 100%
-    height 3%
-    background $highlight-blue
-
-  .logo-main-part
-    margin-top 40px
-    margin-left 40px
-
-  .tj-logo
-    width 110px
-    height 110px
+    padding-left 25px
+  .list-item-secondary:hover
+    padding-left 35px
 
   footer
     display block
-    position fixed
+    position absolute
+    left 0
+    width: 100%
     bottom 0
-
-    width 100%
-    height 5%
-
+    height $nav-height
+    line-height $nav-height
+    color: #ffffff
     background $background-black
-
-  // Anmation effects
-  .list-hidden
-    height 0px
-    ul
-      display none
-      opacity 0
