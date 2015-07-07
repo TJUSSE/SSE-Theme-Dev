@@ -1,0 +1,1 @@
+(function(){$(document).ready(function(){return $(".nav-others-item a").addClass("linear-transition"),console.log("Initialize done.")})}).call(this);

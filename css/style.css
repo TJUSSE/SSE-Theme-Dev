@@ -19,6 +19,10 @@
   margin-top: 0;
   background: #327299;
 }
+.linear-transition {
+  -webkit-transition: all linear 0.1s;
+          transition: all linear 0.1s;
+}
 
 
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
@@ -572,6 +576,7 @@ td {
   height: 35%;
 }
 .page-news .navigator {
+  z-index: 1;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -601,13 +606,49 @@ td {
   width: 40%;
 }
 .page-news .nav-others-item {
+  z-index: 5;
   position: relative;
   float: right;
   line-height: 190px;
-  font-size: 1.15em;
+  font-size: 1.21em;
   margin-right: 50px;
 }
 .page-news .nav-others-item a {
   text-decoration: none;
   color: #111;
+}
+.page-news .nav-others-item a:visited {
+  color: #111;
+}
+.page-news .nav-others-item a:hover {
+  color: #ffa500;
+}
+.page-news .nav-special-block {
+  display: block;
+  z-index: 1;
+  background: rgba(255,255,255,0);
+  opacity: 1;
+  position: absolute;
+  top: 55px;
+  right: -25px;
+  width: 125px;
+  height: 80px;
+  -webkit-transition: all 0.4s;
+          transition: all 0.4s;
+  -webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+          transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  border-radius: 4px;
+}
+.page-news .nav-special-block a {
+  float: right;
+  opacity: 1;
+  line-height: 80px;
+  margin-right: 25px;
+}
+.page-news .nav-special-block:hover {
+  opacity: 1;
+  width: 450px;
+  height: 250px;
+  background: #fff;
+  box-shadow: 1px 1px 4px #d9d9d9;
 }

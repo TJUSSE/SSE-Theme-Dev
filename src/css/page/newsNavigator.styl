@@ -2,6 +2,7 @@
 
 .page-news
   .navigator
+    z-index 1
     position absolute
     top 0px
     left 0px
@@ -32,11 +33,46 @@
     // background #777777
 
   .nav-others-item
+    z-index 5
     position relative
     float right
     line-height $newspage-nav-height - 10px
-    font-size 1.15em
+    font-size 1.21em
     margin-right 50px
     a
       text-decoration none
       color #111
+      // transition color linear .2s
+    a:visited
+      color #111
+    a:hover
+      color orange
+
+  .nav-special-block
+    display block
+    z-index 1
+    background rgba(255,255,255,0)
+    opacity 1
+    position absolute
+    top $newspage-nav-height - 145px
+    right -25px
+    // width 450px
+    // height 250px
+    width 125px
+    height 80px
+    transition all .4s
+    transition-timing-function cubic-bezier(0.215, 0.61, 0.355, 1)
+    border-radius 4px
+    a
+      float right
+      opacity 1
+      line-height 80px
+      margin-right 25px
+
+  .nav-special-block:hover
+    opacity 1
+    width 450px
+    height 250px
+    background rgba(255,255,255,1)
+    box-shadow 1px 1px 4px #d9d9d9
+    // border: 1px solid #939393;
