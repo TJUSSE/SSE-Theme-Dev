@@ -45,12 +45,12 @@
   $('.nav-title').hover( ()->
       index = $(this).index()
       $('.nav-list').eq(index).addClass('nav-list-active')
-      console.log('Index: ' + index)
+      # console.log('Index: ' + index)
       return null
     ,
     ()->
       index = $(this).index()
-      console.log('Remove index: ' + index)
+      # console.log('Remove index: ' + index)
       $('.nav-list').eq(index).removeClass('nav-list-active')
       return null
   )
