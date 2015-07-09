@@ -28,9 +28,7 @@ $(document).ready ()->
 
   $('.group-primary-box').hover( ()->
       index = $(this).index()
-      (
-          $(secondaryBox).removeClass 'group-secondary-box-active'
-      ) for secondaryBox in $('.group-secondary-box')
+      $(secondaryBox).removeClass 'group-secondary-box-active' for secondaryBox in $('.group-secondary-box')
       $('.group-secondary-box').eq(index - 1).addClass('group-secondary-box-active')
       # console.log 'Activate: #' + (index - 1)
       return 0
@@ -39,4 +37,24 @@ $(document).ready ()->
       return 1
   )
 
+  $('.group-primary').click( ()->
+    if $(this).hasClass 'group-selected'
+      $(this).removeClass 'group-selected'
+      $(this).children('span').remove()
+    else
+      $(this).addClass 'group-selected'
+      $(this).append $($('<span class="fa fa-check">'))
+  )
+
+  $('.group-secondary').click( ()->
+    if $(this).hasClass 'group-selected'
+      $(this).removeClass 'group-selected'
+      $(this).children('span').remove()
+    else
+      $(this).addClass 'group-selected'
+      $(this).append $($('<span class="fa fa-check">'))
+  )
+
+
   console.log 'Initialize done.'
+  return 0

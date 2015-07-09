@@ -22,9 +22,16 @@
 
 .group-primary
   overflow: hidden
+  padding-left 10px
   color #696969
   width 130px
   line-height 1.85em
+  transition color .2s, background .2s linear
+
+.group-primary:hover
+  color white
+  background $highlight-blue
+
 
 .group-secondary-box
   // display none
@@ -34,8 +41,9 @@
   font-size 0.85em
   width 0px
   margin-top -1.85em
-  right 140px
-  background rgba(200, 200, 200, 1)
+  right 145px
+  background white
+  box-shadow 1px 1px 4px #d9d9d9
 
   transition width .2s, opacity .2s
   transition-timing-function cubic-bezier(0.215, 0.61, 0.355, 1)
@@ -45,7 +53,31 @@
   width 110px
 
 .group-secondary
+  color #000000
+  font-size 1em
+  line-height 1.25em
+  transition all .2s linear
+
+.group-secondary:hover
+  color white
+  background $highlight-blue
+
+.group-selected
+  color white
+  background $highlight-blue
+
+
+.group-secondary
   overflow hidden
   line-height 1.75em
   max-height 1.75em
   padding-left 10px
+
+.group-primary .fa
+  float right
+  margin-right 0.4em
+  margin-top 0.4em
+
+.group-secondary .fa
+  float right
+  margin-top 0.4em

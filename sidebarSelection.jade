@@ -9,6 +9,7 @@ html
       meta(name="viewport", content="width=device-width, initial-scale=1.0")
       script(type="text/javascript", src="bower_components/jquery/dist/jquery.min.js")
       link(rel="stylesheet", type="text/css", href="css/style.css")
+      link(href="//netdna.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css", rel="stylesheet", type="text/css")
       script(type="text/javascript", src="js/page/sidebarSelection.js")
       title 边栏
    body
@@ -16,7 +17,8 @@ html
          .side-bar-inner
             .groups-title 面向群体
             .group-primary-box
-               .group-primary 本科生
+               .group-primary.group-selected  本科生
+                  span.fa.fa-check
                .group-secondary-box
                   .group-secondary 14级本科生
                   .group-secondary 13级本科生
