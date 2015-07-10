@@ -575,7 +575,7 @@ td {
   width: 85%;
   height: 35%;
 }
-.page-news .navigator {
+.navigator {
   z-index: 1;
   position: absolute;
   top: 0px;
@@ -586,26 +586,26 @@ td {
   height: 200px;
   background: #ddd;
 }
-.page-news .content-wrap {
+.content-wrap {
   position: relative;
   margin: 0 auto;
   height: 100%;
   width: 1250px;
 }
-.page-news .tj-logo {
+.tj-logo {
   float: left;
   margin-left: 15px;
   margin-top: 15px;
   height: 80%;
   width: 480px;
 }
-.page-news .nav-others {
+.nav-others {
   position: relative;
   float: right;
   height: 97%;
   width: 40%;
 }
-.page-news .nav-others-item {
+.nav-others-item {
   z-index: 5;
   position: relative;
   float: right;
@@ -613,17 +613,17 @@ td {
   font-size: 1.21em;
   margin-right: 50px;
 }
-.page-news .nav-others-item a {
+.nav-others-item a {
   text-decoration: none;
   color: #111;
 }
-.page-news .nav-others-item a:visited {
+.nav-others-item a:visited {
   color: #111;
 }
-.page-news .nav-others-item a:hover {
+.nav-others-item a:hover {
   color: #ffa500;
 }
-.page-news .nav-special-block {
+.nav-special-block {
   display: block;
   z-index: 1;
   overflow: hidden;
@@ -640,7 +640,7 @@ td {
           transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
   border-radius: 4px;
 }
-.page-news .nav-special-block a {
+.nav-special-block a {
   text-align: right;
   display: block;
   width: 100%;
@@ -649,27 +649,103 @@ td {
   line-height: 80px;
   margin-right: 25px;
 }
-.page-news .nav-special-block:hover {
+.nav-special-block:hover {
   opacity: 1;
   width: 450px;
   height: 250px;
   background: #fff;
   box-shadow: 1px 1px 4px #d9d9d9;
 }
-.page-news .nav-special-col {
+.nav-special-col {
   float: right;
   width: 25%;
   font-size: 0.9em;
   line-height: 1.55em;
   text-align: center;
 }
-.page-news .nav-special-row {
+.nav-special-row {
   font-size: 0.75em;
   color: #696969;
 }
-.page-news .nav-special-row-title {
+.nav-special-row-title {
   font-size: 1.05em;
   color: #111;
+}
+.page-news .content {
+  display: block;
+  margin-top: 200px;
+  width: 100%;
+  margin-left: 15px;
+}
+.page-news .news-text {
+  width: 65%;
+}
+.page-news .news-text p {
+  margin: 10px 0;
+  line-height: 1.5em;
+}
+.page-news .directory {
+  height: 50px;
+  font-size: 0.95em;
+  line-height: 50px;
+  color: #696969;
+}
+.page-news .change-lang {
+  float: right;
+  margin-right: 65px;
+}
+.page-news .news-title {
+  margin: auto;
+  width: 100%;
+  font-size: 1.8em;
+  text-align: center;
+}
+.page-news .news-date {
+  line-height: 3em;
+  margin: auto;
+  width: 100%;
+  font-size: 1.2em;
+  text-align: center;
+  color: #2267d9;
+}
+.page-news .news-footer {
+  display: block;
+  min-height: 150px;
+  width: 100%;
+  margin-top: 65px;
+  background: #332f2e;
+  padding-left: 15px;
+}
+.page-news .block-blank {
+  width: 100%;
+  height: 20px;
+}
+.page-news .footer-content {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 100%;
+}
+.page-news .footer-list {
+  display: block;
+  color: #d3d3d3;
+  width: 180px;
+}
+.page-news .footer-list-title {
+  color: #fff;
+  font-size: 1.15em;
+  line-height: 2.5em;
+}
+.page-news .footer-list-item {
+  margin-left: 15px;
+}
+.page-news .news-footer-author {
+  margin-top: 30px;
+  line-height: 50px;
+  height: 50px;
+  font-size: 1.05em;
+  color: #fff;
 }
 .side-bar-selection {
   position: absolute;
