@@ -1,3 +1,13 @@
+body {
+  overflow: scroll;
+  width: 100%;
+}
+@media screen and (min-width: 1250px) {
+  body {
+    overflow: hidden;
+    width: 100%;
+  }
+}
 .vertical-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -22,6 +32,12 @@
 .linear-transition {
   -webkit-transition: all linear 0.1s;
           transition: all linear 0.1s;
+}
+.content-wrap {
+  position: relative;
+  margin: 0 auto;
+  height: 100%;
+  width: 1250px;
 }
 
 
@@ -442,9 +458,48 @@ td {
   font-size: 1em;
   font-family: "Open Sans", Segoe, Tahoma, arial, "Hiragino Sans GB", "Hiragino Sans GB W3", STHeiti, "Microsoft YaHei", sans-serif;
 }
+.news-footer {
+  display: block;
+  width: 100%;
+  min-width: 1250px;
+  margin-top: 65px;
+  padding-left: 15px;
+  background: #332f2e;
+  bottom: 0;
+}
+.block-blank {
+  width: 100%;
+  height: 20px;
+}
+.footer-content {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 100%;
+}
+.footer-list {
+  display: block;
+  color: #d3d3d3;
+  width: 180px;
+}
+.footer-list-title {
+  color: #fff;
+  font-size: 1.15em;
+  line-height: 2.5em;
+}
+.footer-list-item {
+  margin-left: 15px;
+}
+.news-footer-author {
+  margin-top: 30px;
+  line-height: 50px;
+  height: 50px;
+  font-size: 1.05em;
+  color: #fff;
+}
 .page-index {
   background: url("../resources/bg.jpg") center center no-repeat;
-  background-size: cover;
 }
 .page-index header {
   position: absolute;
@@ -453,6 +508,7 @@ td {
   width: 100%;
   height: 50px;
   background: rgba(0,0,0,0.52);
+  min-width: 1250px;
 }
 .page-index .content-wrap {
   position: relative;
@@ -552,6 +608,7 @@ td {
   position: absolute;
   left: 0;
   width: 100%;
+  min-width: 1250px;
   bottom: 0;
   height: 70px;
   line-height: 70px;
@@ -560,12 +617,17 @@ td {
 }
 .page-index .logo-container {
   z-index: 1;
-  position: fixed;
-  bottom: 20%;
-  right: 12%;
+  position: absolute;
+  bottom: 100px;
+  right: 200px;
   width: 572px;
   height: 214px;
   background: rgba(0,0,0,0.52);
+}
+.page-index .logo-container .blue-bar-index-page {
+  width: 572px !important;
+  height: 10px;
+  background: #2267d9;
 }
 .page-index .logo-main-part {
   margin-top: 35px;
@@ -574,6 +636,18 @@ td {
 .page-index .tj-logo {
   width: 85%;
   height: 35%;
+}
+.page-infolist .content-wrap {
+  position: relative;
+  margin: 0 auto;
+  width: 1250px;
+  height: auto;
+}
+.page-infolist .info-list-container {
+  padding-top: 200px;
+  min-height: 459px;
+  width: 100%;
+  padding-left: 15px;
 }
 .info-list-sidebar {
   width: 250px;
@@ -666,24 +740,26 @@ td {
 }
 .navigator {
   z-index: 1;
-  position: absolute;
-  top: 0px;
-  left: 0px;
   margin-top: 0px;
   padding-top: 0px;
+  padding-left: 15px;
   width: 100%;
   height: 200px;
   background: #ddd;
+  min-width: 1250px;
 }
-.content-wrap {
-  position: relative;
-  margin: 0 auto;
-  height: 100%;
-  width: 1250px;
+.blue-bar {
+  margin-left: -15px;
+  min-width: 1265px;
+}
+@media screen and (min-width: 1250px) {
+  .blue-bar {
+    margin-left: -15px;
+    min-width: 1935px;
+  }
 }
 .tj-logo {
   float: left;
-  margin-left: 15px;
   margin-top: 15px;
   height: 80%;
   width: 480px;
@@ -830,7 +906,6 @@ td {
 }
 .page-news .content {
   display: block;
-  margin-top: 200px;
   width: 100%;
   margin-left: 15px;
 }
@@ -864,45 +939,6 @@ td {
   font-size: 1.2em;
   text-align: center;
   color: #2267d9;
-}
-.page-news .news-footer {
-  display: block;
-  min-height: 150px;
-  width: 100%;
-  margin-top: 65px;
-  background: #332f2e;
-  padding-left: 15px;
-}
-.page-news .block-blank {
-  width: 100%;
-  height: 20px;
-}
-.page-news .footer-content {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  width: 100%;
-}
-.page-news .footer-list {
-  display: block;
-  color: #d3d3d3;
-  width: 180px;
-}
-.page-news .footer-list-title {
-  color: #fff;
-  font-size: 1.15em;
-  line-height: 2.5em;
-}
-.page-news .footer-list-item {
-  margin-left: 15px;
-}
-.page-news .news-footer-author {
-  margin-top: 30px;
-  line-height: 50px;
-  height: 50px;
-  font-size: 1.05em;
-  color: #fff;
 }
 .side-bar-selection {
   position: absolute;

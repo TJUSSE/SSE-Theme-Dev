@@ -1,26 +1,35 @@
 @require '../variable.styl'
 
-
   .navigator
     z-index 1
-    position absolute
-    top 0px
-    left 0px
+    // position absolute
+    // top 0px
+    // left 0px
     margin-top 0px
     padding-top 0px
+    padding-left 15px
     width 100%
     height $newspage-nav-height
     background #dddddd
+    min-width 1250px
 
-  .content-wrap
-    position: relative
-    margin 0 auto
-    height 100%
-    width 1250px
+  .blue-bar
+    margin-left -15px
+    min-width 1265px
+
+  @media screen and (min-width: 1250px)
+    .blue-bar
+      margin-left -15px
+      min-width 1935px
+  /*.content-wrap*/
+    /*position: relative*/
+    /*margin 0 auto*/
+    /*height 100%*/
+    /*width 1250px*/
 
   .tj-logo
     float left
-    margin-left 15px
+    // margin-left 15px
     margin-top 15px
     height 80%
     width 480px

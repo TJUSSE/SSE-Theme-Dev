@@ -2,7 +2,7 @@
 
 .page-index
   background url(../resources/bg.jpg) center center no-repeat
-  background-size cover
+  // background-size cover
 
   header
     position absolute
@@ -11,6 +11,7 @@
     width: 100%
     height: $nav-height
     background $background-black
+    min-width 1250px
 
   .content-wrap
     position: relative
@@ -105,6 +106,7 @@
     position absolute
     left 0
     width: 100%
+    min-width 1250px
     bottom 0
     height $footer-height
     line-height $footer-height
@@ -114,16 +116,23 @@
   // Logo part
   .logo-container
     z-index 1
-    position fixed
-    bottom 20%
-    right 12%
+    position absolute
+    bottom 100px
+    right 200px
     width 572px
     height 214px
     background $background-black
 
+    .blue-bar-index-page
+      width 572px !important
+      height 10px
+      background $highlight-blue
+
   .logo-main-part
     margin-top 35px
     margin-left 45px
+
+
 
   .tj-logo
     width 85%
