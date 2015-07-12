@@ -1026,21 +1026,19 @@ td {
 }
 .container {
   position: absolute;
-  -webkit-transition: all 2.2s cubic-bezier(0.215, 0.61, 0.355, 1);
-          transition: all 2.2s cubic-bezier(0.215, 0.61, 0.355, 1);
   margin-left: 10%;
   margin-right: 10%;
-  width: 80%;
+  width: 100%;
   height: 100%;
-  background: #efefef;
   overflow: scroll;
+  outline: none;
 }
 .center-box {
   position: relative;
   margin-left: auto;
   margin-right: auto;
   width: 50%;
-  top: 20%;
+  top: 50px;
   height: 80%;
 }
 .sub-form {
@@ -1075,7 +1073,7 @@ h2 {
   background: transparent;
   border: 1px solid #ccc;
   padding: 10px 25px 10px 25px;
-  top: 30%;
+  top: 400px;
   width: 10%;
   color: #696969;
   border-radius: 4px;
@@ -1083,16 +1081,11 @@ h2 {
 }
 .sub-form .button:hover {
   color: #696969;
-  background-color: #ebebeb;
   border-color: #adadad;
 }
 .sub-form .button:active {
-  color: #696969;
-  text-shadow: 0 -1px 0 #444, 0 0 5px #ffd, 0 0 8px #fff;
-  box-shadow: 0 1px 0 #666, 0 2px 0 #444, 0 2px 2px rgba(0,0,0,0.9);
-  -webkit-transform: translateY(3px);
-      -ms-transform: translateY(3px);
-          transform: translateY(3px);
+  border: 2px solid #adadad;
+  outline: none;
   -webkit-animation: none;
           animation: none;
 }
