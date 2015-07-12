@@ -37,13 +37,9 @@ gulp.watch('default', ['js', 'css'], function () {
 gulp.task('watch', function () {
   return watch(['src/**/*'], function (file) {
     console.log('modified: %s', file.path);
-    if (file.path.match(/\/src\/js\//)) {
-      gulp.start('js');
-      return;
-    }
-    if (file.path.match(/\/src\/css\//)) {
-      gulp.start('css');
-      return;
-    }
+    gulp.start('js');
+    gulp.start('css');
+    console.log('====== MODIFIED DONE. ======');
+    return;
   });
 });

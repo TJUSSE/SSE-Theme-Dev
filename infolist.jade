@@ -8,6 +8,7 @@ html
       script(type="text/javascript", src="bower_components/jquery/dist/jquery.min.js")
       // link(rel="stylesheet", type="text/css", href="css/foundation.min.css")
       link(rel="stylesheet", type="text/css", href="css/style.css")
+      link(href="//netdna.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css", rel="stylesheet", type="text/css")
       script(type="text/javascript", src="js/page/newspageNavigator.js")
       title 通知列表
    body.page-news.page-infolist
@@ -42,8 +43,63 @@ html
       .info-list-container
          .content-wrap
             .directory 首页 > 学院通知 > 13级本科生
-               .change-lang ENGLISH
+               // .change-lang ENGLISH
             .info-list-contents
+               .info-list-left
+                  .info-row
+                     span.info-date 2015-07-08
+                     span.info-title 2015年同济大学“同行计划”赴湖南省暑期挂职锻炼
+                  .info-row
+                     span.info-date 2015-06-19
+                     span.info-title 大二、大三学生开展SERU网上问卷调查的通知
+                  .info-row
+                     span.info-date 2015-06-18
+                     span.info-title 大二、大三学生开展SERU网上问卷调查的通知
+               .info-list-right
+                  .info-list-sidebar
+                     .box-search
+                        input.info-sidebar-search-input(placeholder='搜索……', type="text")
+                        button.info-sidebar-search-btn
+                           span.fa.fa-search
+                     button.btn-subscribe
+                        span.fa.fa-archive
+                        span &nbsp;&nbsp;订阅通知
+                     .box-categories-container
+                        .box-category
+                           .category-title
+                              span.fa.fa-angle-down
+                              span &nbsp;
+                              span 本科生
+                           .category-secondary-box
+                              .category-secondary 2011级本科
+                              .category-secondary 2012级本科
+                              .category-secondary 2013级本科
+                              .category-secondary 2014级本科
+                              .category-secondary 已毕业本科
+                        .box-category
+                           .category-title
+                              span.fa.fa-angle-right
+                              span &nbsp;
+                              span 硕士生
+                           .category-secondary-box
+                        .box-category
+                           .category-title
+                              span.fa.fa-angle-right
+                              span &nbsp;
+                              span 博士生
+                           .category-secondary-box
+                        .box-category
+                           .category-title
+                              span.fa.fa-angle-right
+                              span &nbsp;
+                              span International
+                           .category-secondary-box
+                        .box-category
+                           .category-title
+                              span.fa.fa-angle-right
+                              span &nbsp;
+                              span 教师
+                           .category-secondary-box
 
       .news-footer
          .content-wrap
