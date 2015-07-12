@@ -997,8 +997,8 @@ td {
   margin-right: 10%;
   width: 80%;
   height: 100%;
-  bottom: 70px;
-  background: rgba(0,0,0,0.65);
+  background: #efefef;
+  overflow: scroll;
 }
 .center-box {
   position: relative;
@@ -1006,7 +1006,7 @@ td {
   margin-right: auto;
   width: 50%;
   top: 20%;
-  height: 75%;
+  height: 80%;
 }
 .sub-form {
   margin-left: auto;
@@ -1015,7 +1015,7 @@ td {
   height: 80%;
   width: 95%;
   font-family: "Open Sans", Segoe, Tahoma, arial, "Hiragino Sans GB", "Hiragino Sans GB W3", STHeiti, "Microsoft YaHei", sans-serif;
-  color: #fff;
+  color: #696969;
   text-shadow: 0.1px 0.1px 0.1px #fff;
   border1px: solid #ddd;
   border-radius: 5px;
@@ -1025,77 +1025,34 @@ td {
   height: 100%;
   width: 33%;
 }
-.sub-form label {
+.sub-form label,
+h2 {
   width: 90%;
   float: left;
-  margin: 0px 0px 5px;
+  margin: 10px;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-}
-.sub-form select {
-  background: #fff url("down-arrow.png") no-repeat right;
-  background: #fff url("down-arrow.png") no-repeat right;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  text-indent: 0.01px;
-  text-overflow: '';
-  width: 80%;
-  height: 35px;
-  line-height: 15px;
 }
 .sub-form .button {
   position: fixed;
   background: transparent;
   border: 1px solid #ccc;
   padding: 10px 25px 10px 25px;
-  top: 50%;
+  top: 30%;
   width: 10%;
-  color: #fff;
+  color: #696969;
   border-radius: 4px;
   float: left;
 }
-.sub-form input[type=checkbox].css-checkbox {
-  padding-left: 20px;
-  height: 15px;
-  display: inline-block;
-  line-height: 15px;
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  font-size: 15px;
-  vertical-align: middle;
-  cursor: pointer;
-  background-image: url("../resources/depressed.png");
-}
-.sub-form input[type=checkbox].css-checkbox:checked {
-  background-position: 0 -15px;
-}
-.depressed {
-  background-image: url("../resources/depressed.png");
-}
-.sub-form input[type=checkbox].css-checkbox.sme {
-  padding-left: 22px;
-  height: 16px;
-  display: inline-block;
-  line-height: 16px;
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  font-size: 15px;
-  vertical-align: middle;
-  cursor: pointer;
-}
-.sub-form input[type=checkbox].css-checkbox.sme:checked {
-  background-position: 0 -16px;
-}
 .sub-form .button:hover {
-  color: #333;
+  color: #696969;
   background-color: #ebebeb;
   border-color: #adadad;
 }
 .sub-form .button:active {
-  color: #fff;
+  color: #696969;
   text-shadow: 0 -1px 0 #444, 0 0 5px #ffd, 0 0 8px #fff;
   box-shadow: 0 1px 0 #666, 0 2px 0 #444, 0 2px 2px rgba(0,0,0,0.9);
   -webkit-transform: translateY(3px);
@@ -1103,4 +1060,31 @@ td {
           transform: translateY(3px);
   -webkit-animation: none;
           animation: none;
+}
+.sub-form input[type=checkbox].css-checkbox {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+.sub-form input[type=checkbox].css-checkbox + label.css-label {
+  padding-left: 20px;
+  height: 15px;
+  display: inline-block;
+  line-height: 15px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  font-size: large;
+  vertical-align: middle;
+  cursor: pointer;
+}
+.sub-form input[type=checkbox].css-checkbox:checked + label.css-label {
+  background-position: 0 -15px;
+}
+.sub-form .depressed {
+  background-image: url("../resources/depressed.png");
 }

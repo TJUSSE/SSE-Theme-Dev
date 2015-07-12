@@ -1,5 +1,7 @@
 @require '../variable.styl'
 
+$sub-bgcolor = rgba(239, 239, 239, 1)
+
 .container
 	position absolute
 	transition all 2.2s $easeOutCubic
@@ -7,8 +9,8 @@
 	margin-right 10%
 	width 80%
 	height 100%
-	bottom 70px
-	background $background-black-darken
+	background $sub-bgcolor
+	overflow scroll
 
 .center-box
 	position relative
@@ -16,9 +18,8 @@
 	margin-right auto
 	width 50%
 	top 20%
-	height 75%
+	height 80%
 
-/* #### bootstrap Form #### */
 .sub-form
 	margin-left auto
 	margin-right auto
@@ -31,84 +32,72 @@
 	font-family $sse-font-family
 	// font 12px "Helvetica Neue", Helvetica, Arial, sans-serif
 	// color #888
-	color #fff
+	color #696969
 	text-shadow 0.1px 0.1px 0.1px #FFF
 	border1px solid #DDD
 	border-radius 5px
 	
+//.sub-form input[type='checkbox']
+//	display none
+
 .sub-form div
 	float left
 	height 100%
 	width 33%
 
-.sub-form label
+.sub-form label, h2
 	width 90%
 	float left
-	margin 0px 0px 5px
+	margin 10px
 	user-select none
-
-.sub-form select
-	background #FFF url('down-arrow.png') no-repeat right
-	background #FFF url('down-arrow.png') no-repeat right
-	appearance none
-	text-indent 0.01px
-	text-overflow ''
-	width 80%
-	height 35px
-	line-height 15px
 
 .sub-form .button
 	position fixed
 	background transparent
 	border 1px solid #CCC
 	padding 10px 25px 10px 25px
-	top 50%
+	top 30%
 	width 10%
 	// color #333
-	color #fff
+	color #696969
 	border-radius 4px
 	float left
 
+.sub-form .button:hover
+	color #696969
+	background-color #EBEBEB
+	border-color #ADADAD
+	
+.sub-form .button:active
+	color #696969
+	text-shadow  0 -1px 0 #444, 0 0 5px #ffd, 0 0 8px #fff
+	box-shadow  0 1px 0 #666, 0 2px 0 #444, 0 2px 2px rgba(0,0,0,0.9)
+	transform  translateY(3px)
+	animation  none
+	
 .sub-form input[type=checkbox].css-checkbox
+	position absolute 
+	overflow hidden 
+	clip rect(0 0 0 0) 
+	height 1px 
+	width 1px 
+	margin -1px 
+	padding 0
+	border 0
+
+.sub-form input[type=checkbox].css-checkbox + label.css-label
 	padding-left 20px
 	height 15px 
 	display inline-block
 	line-height 15px
 	background-repeat no-repeat
-	background-position  0 0
-	font-size 15px
-	vertical-align middle
-	cursor pointer
-	background-image url('../resources/depressed.png')
-
-.sub-form input[type=checkbox].css-checkbox:checked
-	background-position  0 -15px
-
-.depressed
-	background-image url('../resources/depressed.png')
-	
-.sub-form input[type=checkbox].css-checkbox.sme
-	padding-left 22px
-	height 16px 
-	display inline-block
-	line-height 16px
-	background-repeat no-repeat
-	background-position  0 0
-	font-size 15px
+	background-position 0 0
+	font-size large
 	vertical-align middle
 	cursor pointer
 
-.sub-form input[type=checkbox].css-checkbox.sme:checked
-	background-position  0 -16px
+.sub-form input[type=checkbox].css-checkbox:checked + label.css-label
+	background-position 0 -15px
 
-.sub-form .button:hover
-	color #333
-	background-color #EBEBEB
-	border-color #ADADAD
-	
-.sub-form .button:active
-	color  #fff
-	text-shadow  0 -1px 0 #444, 0 0 5px #ffd, 0 0 8px #fff
-	box-shadow  0 1px 0 #666, 0 2px 0 #444, 0 2px 2px rgba(0,0,0,0.9)
-	transform  translateY(3px)
-	animation  none
+.sub-form .depressed
+	background-image url(../resources/depressed.png)
