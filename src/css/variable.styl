@@ -20,6 +20,17 @@ $highlight-blue = #2267d9;
 // newpages
 $newspage-nav-height = 200px;
 
+body
+  overflow scroll
+  width 100%
+
+@media screen and (min-width: 1250px)
+  body
+    overflow hidden
+    width 100%
+
+
+
 .vertical-container
   display flex
   display -webkit-flex
@@ -37,3 +48,9 @@ $newspage-nav-height = 200px;
 
 .linear-transition
   transition all linear .1s
+
+.content-wrap
+  position: relative
+  margin 0 auto
+  height 100%
+  width 1250px
