@@ -848,8 +848,7 @@ td {
 }
 .tj-logo {
   float: left;
-  margin-top: 15px;
-  height: 80%;
+  margin-top: 55px;
   width: 480px;
 }
 .nav-others {
@@ -1200,4 +1199,50 @@ h2 {
 }
 .sub-form .depressed {
   background-image: url("../resources/depressed.png");
+}
+.page-teachers-list {
+  display: block;
+/*.content-wrap*/
+/*overflow auto*/
+}
+.page-teachers-list .teacher-list-container {
+  margin-top: 0px;
+}
+.directory {
+  color: #696969;
+  line-height: 50px;
+}
+.teacher-list-slides {
+  display: block;
+}
+.slider-wrapper {
+  width: 80%;
+  margin-top: 100px;
+}
+.slides-container {
+  width: 100%;
+}
+.slide-wrapper {
+  display: inline-block;
+  margin-top: 0px;
+  width: 100%;
+  height: 440px;
+}
+.slides-container {
+  overflow: hidden;
+  display: inline-block;
+}
+#slider {
+  display: block;
+  width: 300%;
+  height: 100%;
+}
+#slider .slide-imgs {
+  display: inline-block;
+}
+#slider img {
+  width: 1250px !important;
+  float: left;
+  -webkit-transition: all ease-in-out 0.2s;
+          transition: all ease-in-out 0.2s;
 }
