@@ -458,6 +458,85 @@ td {
   font-size: 1em;
   font-family: "Open Sans", Segoe, Tahoma, arial, "Hiragino Sans GB", "Hiragino Sans GB W3", STHeiti, "Microsoft YaHei", sans-serif;
 }
+.page-about .content-wrap {
+  height: auto;
+}
+.page-about .about-content-box {
+  display: block;
+}
+.page-about .directory {
+  height: 50px;
+  font-size: 0.95em;
+  line-height: 50px;
+  color: #696969;
+}
+.page-about .about-brief {
+  width: 100%;
+  display: inline-block;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.page-about .about-title {
+  height: 2px;
+  background: #d3d3d3;
+  text-align: center;
+}
+.page-about .about-title span {
+  background: #fff;
+  position: relative;
+  top: -0.7em;
+  color: #036eb8;
+  font-size: 1.4em;
+  padding: 0 10px;
+}
+.page-about .about-content {
+  display: inline-block;
+  width: 100%;
+  position: relative;
+  margin-top: 35px;
+}
+.page-about .about-image {
+  display: inline-block;
+  width: 590px;
+  height: 430px;
+  padding: 0;
+  border: 1px solid;
+}
+.page-about .about-text {
+  display: inline-block;
+  width: 590px;
+  height: 430px;
+  font-size: 1.1em;
+  line-height: 1.6em;
+  text-align: left;
+}
+.page-about .about-text p {
+  margin-top: 0;
+}
+.page-about .about-text ul {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.page-about .about-text ul li {
+  margin-left: 18px;
+}
+.page-about .on-left {
+  float: left;
+  margin-right: 25px;
+}
+.page-about .on-right {
+  float: right;
+  margin-left: 25px;
+}
+.page-about .full {
+  display: block;
+  width: 100%;
+}
+.page-about .clear-inline {
+  clear: both;
+}
 .news-footer {
   display: block;
   width: 100%;
