@@ -1,0 +1,1 @@
+(function(){$(document).ready(function(){var i,s;return i=$("#slider .slide-imgs img"),s=i.length,$(".slide-imgs").css("width",100*s+"%")})}).call(this);
