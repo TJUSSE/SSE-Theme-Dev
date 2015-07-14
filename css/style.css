@@ -1104,6 +1104,89 @@ td {
 .page-news .sidebar-news-relate-title .fa {
   margin-right: 5px;
 }
+.page-personaltraining .directory {
+  height: 50px;
+  font-size: 0.95em;
+  line-height: 50px;
+  color: #696969;
+}
+.page-personaltraining .personaltraining-container {
+  padding-top: 0px;
+  min-height: 559px;
+  width: 100%;
+}
+.page-personaltraining .content-wrap {
+  position: relative;
+  margin: 0 auto;
+  max-width: 1250px;
+  height: auto;
+}
+.page-personaltraining .content-wrap .traning-title {
+  margin-top: 50px;
+  height: 1px;
+  background: #d3d3d3;
+  text-align: center;
+}
+.page-personaltraining .content-wrap .traning-title span {
+  background: #fff;
+  position: relative;
+  top: -0.7em;
+  color: #036eb8;
+  font-size: 1.4em;
+  padding: 0 10px;
+}
+.page-personaltraining .content-wrap .largepic {
+  width: 1250px;
+  height: 440px;
+  background-color: #efefef;
+}
+.page-personaltraining .content-wrap .destination {
+  vertical-align: top;
+  text-align: center;
+  padding: 10px 14px;
+  margin-top: 30px;
+  width: 280px;
+  display: inline-block;
+}
+.page-personaltraining .content-wrap .destination #circlepic,
+.page-personaltraining .content-wrap .destination img {
+  margin: auto;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+.page-personaltraining .content-wrap .directIntro {
+  min-height: 500px;
+  width: 1250;
+  margin-top: 50px;
+}
+.page-personaltraining .content-wrap .directIntro .direct {
+  vertical-align: top;
+  padding: 30px;
+  min-height: 500px;
+  width: 562px;
+  display: inline-block;
+}
+.page-personaltraining .content-wrap .directIntro img {
+  width: 562px;
+  height: 300px;
+}
+table {
+  margin-top: 40px;
+  line-height: 50px;
+  color: #444;
+  font-size: 1.2em;
+  text-align: left;
+  width: 100%;
+}
+th {
+  background-color: #efefef;
+}
+p {
+  line-height: 40px;
+  font-size: 1.2em;
+  color: #444;
+}
 .side-bar-selection {
   position: absolute;
   right: 50px;
