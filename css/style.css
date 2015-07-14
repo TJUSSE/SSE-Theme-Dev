@@ -537,6 +537,39 @@ td {
 .page-about .clear-inline {
   clear: both;
 }
+.page-course .directory {
+  height: 50px;
+  font-size: 0.95em;
+  line-height: 50px;
+  color: #696969;
+}
+.page-course .content-wrap {
+  position: relative;
+  margin: 0 auto;
+  width: 1250px;
+  height: auto;
+}
+.page-course .courselist-container {
+  padding-top: 0px;
+  min-height: 559px;
+  width: 100%;
+}
+.page-course .largepic {
+  width: 1250px;
+  height: 440px;
+  background-color: #efefef;
+}
+.page-course table {
+  margin-top: 40px;
+  line-height: 50px;
+  color: #444;
+  font-size: 1.2em;
+  text-align: left;
+  width: 100%;
+}
+.page-course th {
+  background-color: #efefef;
+}
 .news-footer {
   display: block;
   width: 100%;
