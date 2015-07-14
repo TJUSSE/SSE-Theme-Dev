@@ -39,6 +39,19 @@ body {
   height: 100%;
   width: 1250px;
 }
+.directory {
+  height: 50px;
+  font-size: 0.95em;
+  line-height: 50px;
+  color: #696969;
+}
+.change-lang {
+  float: right;
+  margin-right: 65px;
+}
+.clear {
+  clear: both;
+}
 
 
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
@@ -994,6 +1007,7 @@ td {
   width: 100%;
 }
 .page-news .news-text {
+  float: left;
   width: 65%;
 }
 .page-news .news-text p {
@@ -1023,6 +1037,32 @@ td {
   font-size: 1.2em;
   text-align: center;
   color: #2267d9;
+}
+.page-news .sidebar-news-relate {
+  margin-top: 25px;
+  width: 25%;
+  float: right;
+  margin-right: 5%;
+}
+.page-news .sidebar-news-relate a {
+  text-decoration: none;
+  color: #333;
+}
+.page-news .sidebar-news-relate a .fa:after {
+  content: "　";
+}
+.page-news .sidebar-news-relate a:hover {
+  color: #2267d9;
+  text-decoration: none;
+}
+.page-news .sidebar-news-relate a:visited {
+  color: #333;
+}
+.page-news .sidebar-news-relate-title {
+  width: 100%;
+  font-size: 1.4em;
+  text-align: center;
+  margin-bottom: 25px;
 }
 .side-bar-selection {
   position: absolute;
