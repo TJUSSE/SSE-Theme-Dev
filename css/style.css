@@ -1289,7 +1289,58 @@ h2 {
 }
 #slider img {
   width: 1250px !important;
+  height: 440px !important;
   float: left;
-  -webkit-transition: all ease-in-out 0.2s;
-          transition: all ease-in-out 0.2s;
+  -webkit-transition: all ease-in-out 0.8s;
+          transition: all ease-in-out 0.8s;
+}
+#next,
+#prev {
+  position: absolute;
+  z-index: 999;
+  top: 50px;
+  height: 440px !important;
+  width: 100px;
+  background: none;
+  border: none;
+  font-size: 3em;
+  color: #fff;
+  opacity: 0.3;
+  outline: none;
+  -webkit-transition: all linear 0.2s;
+          transition: all linear 0.2s;
+}
+#next:hover,
+#prev:hover {
+  opacity: 1;
+}
+#prev {
+  left: 0;
+}
+#next {
+  right: 0;
+}
+.move-left {
+  margin-left: -100%;
+}
+.slide-dots {
+  z-index: 1000;
+  position: absolute;
+  bottom: 6px;
+  display: table;
+  text-align: center;
+  width: 1250px !important;
+  margin: 0 auto;
+}
+.slide-dots button {
+  width: 25px !important;
+  height: 25px !important;
+  margin: 0 2px;
+  border: none;
+  outline: none;
+  background: none;
+  color: #fff;
+}
+.slide-dots .activated {
+  color: #2267d9;
 }
