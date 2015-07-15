@@ -5,13 +5,14 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>订阅信息</title>
 	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-	<script src="/js/subscription.js" type="text/javascript" charset="utf-8" async defer></script>
+	<!--<link rel="stylesheet" type="text/css" href="http://netdna.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">-->
+	<script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+	<script src="js/page/subscription.js" type="text/javascript" charset="utf-8"></script>
 </head>
-<body>
+<body class="sub">
 	<header>
-		<div class="navigator">
-			<div class="blue-bar"></div>
+		<div class="sub-navigator">
+			<div class="sub-blue-bar"></div>
 			<div class="content-wrap">
 				<img src="resources/logo.svg" class="tj-logo">
 				<div class="nav-others">
@@ -52,75 +53,61 @@
 	</header><!-- /header -->
 	<div class="container">
 		<div class="center-box">
-			<form action="subscription" method="post" accept-charset="utf-8" class="sub-form">
+			<div id="prompt" class="invi">
+				<p>订阅设置已保存</p>
 				<div>
-					<input type="submit" name="" value="订阅" class="button">
+					<button id="revise-but">返回修改</button>
+					<button id="close-but">关闭</button>
 				</div>
+			</div>
+			<h2>订阅通知</h2>
+			<form action="javascript:void(0);" method="post" accept-charset="utf-8" class="sub-form">
+				<p class="user-mail">为www@www.www设置订阅</p>
 				<div id="class-one">
-					<h2>一级分类</h2>
-					<input id="checkbox0" type="checkbox" name="" value="研究生" class="css-checkbox">
-					<label for="checkbox0" class="css-label sme depressed">研究生</label>
-					<input id="checkbox1" type="checkbox" name="" value="教师" class="css-checkbox">
-					<label for="checkbox1" class="css-label sme depressed">教师</label>
-					<input id="checkbox2" type="checkbox" name="" value="本科" class="css-checkbox">
-					<label for="checkbox2" class="css-label sme depressed">本科</label>
-					<input id="checkbox3" type="checkbox" name="" value="研究生" class="css-checkbox">
-					<label for="checkbox3" class="css-label sme depressed">研究生</label>
-					<input id="checkbox4" type="checkbox" name="" value="教师" class="css-checkbox">
-					<label for="checkbox4" class="css-label sme depressed">教师</label>
-					<input id="checkbox5" type="checkbox" name="" value="本科" class="css-checkbox">
-					<label for="checkbox5" class="css-label sme depressed">本科</label>
-					<input id="checkbox6" type="checkbox" name="" value="研究生" class="css-checkbox">
-					<label for="checkbox6" class="css-label sme depressed">研究生</label>
-					<input id="checkbox7" type="checkbox" name="" value="教师" class="css-checkbox">
-					<label for="checkbox7" class="css-label sme depressed">教师</label>
-					<input id="checkbox8" type="checkbox" name="" value="本科" class="css-checkbox">
-					<label for="checkbox8" class="css-label sme depressed">本科</label>
-					<input id="checkbox9" type="checkbox" name="" value="研究生" class="css-checkbox">
-					<label for="checkbox9" class="css-label sme depressed">研究生</label>
-					<input id="checkbox10" type="checkbox" name="" value="教师" class="css-checkbox">
-					<label for="checkbox10" class="css-label sme depressed">教师</label>
-					<input id="checkbox11" type="checkbox" name="" value="本科" class="css-checkbox">
-					<label for="checkbox11" class="css-label sme depressed">本科</label>
-					<input id="checkbox20" type="checkbox" name="" value="研究生" class="css-checkbox">
-					<label for="checkbox20" class="css-label sme depressed">研究生</label>
-					<input id="checkbox21" type="checkbox" name="" value="教师" class="css-checkbox">
-					<label for="checkbox21" class="css-label sme depressed">教师</label>
-					<input id="checkbox22" type="checkbox" name="" value="本科" class="css-checkbox">
-					<label for="checkbox22" class="css-label sme depressed">本科</label>
-					<input id="checkbox23" type="checkbox" name="" value="研究生" class="css-checkbox">
-					<label for="checkbox23" class="css-label sme depressed">研究生</label>
-					<input id="checkbox24" type="checkbox" name="" value="教师" class="css-checkbox">
-					<label for="checkbox24" class="css-label sme depressed">教师</label>
-					<input id="checkbox25" type="checkbox" name="" value="本科" class="css-checkbox">
-					<label for="checkbox25" class="css-label sme depressed">本科</label>
-					<input id="checkbox30" type="checkbox" name="" value="研究生" class="css-checkbox">
-					<label for="checkbox30" class="css-label sme depressed">研究生</label>
-					<input id="checkbox31" type="checkbox" name="" value="教师" class="css-checkbox">
-					<label for="checkbox31" class="css-label sme depressed">教师</label>
-					<input id="checkbox32" type="checkbox" name="" value="本科" class="css-checkbox">
-					<label for="checkbox32" class="css-label sme depressed">本科</label>
-					<input id="checkbox33" type="checkbox" name="" value="研究生" class="css-checkbox">
-					<label for="checkbox33" class="css-label sme depressed">研究生</label>
-					<input id="checkbox34" type="checkbox" name="" value="教师" class="css-checkbox">
-					<label for="checkbox34" class="css-label sme depressed">教师</label>
-					<input id="checkbox35" type="checkbox" name="" value="本科" class="css-checkbox">
-					<label for="checkbox35" class="css-label sme depressed">本科</label>
+					<h3>面向群体</h3>
+					<div class="class-layer">
+						<input id="checkbox0" type="checkbox" name="" value="本科生" class="css-checkbox">
+						<label for="checkbox0" class="css-label sme depressed">本科生</label>
+						<input id="checkbox1" type="checkbox" name="" value="13级本科生" class="css-checkbox">
+						<label for="checkbox1" class="css-label sme depressed">13级本科生</label>
+						<input id="checkbox2" type="checkbox" name="" value="12级本科生" class="css-checkbox">
+						<label for="checkbox2" class="css-label sme depressed">12级本科生</label>
+						<input id="checkbox3" type="checkbox" name="" value="11级本科生" class="css-checkbox">
+						<label for="checkbox3" class="css-label sme depressed">11级本科生</label>
+					</div>
+					<div class="class-layer">
+						<input id="checkbox4" type="checkbox" name="" value="硕士研究生" class="css-checkbox">
+						<label for="checkbox4" class="css-label sme depressed">硕士研究生</label>
+						<input id="checkbox5" type="checkbox" name="" value="13级硕士研究生" class="css-checkbox">
+						<label for="checkbox5" class="css-label sme depressed">13级硕士研究生</label>
+						<input id="checkbox6" type="checkbox" name="" value="..." class="css-checkbox">
+						<label for="checkbox6" class="css-label sme depressed">...</label>
+					</div>
+					<div class="class-layer">
+						<input id="checkbox7" type="checkbox" name="" value="International" class="css-checkbox">
+						<label for="checkbox7" class="css-label sme depressed">International</label>
+					</div>
+					<div class="class-layer">
+						<input id="checkbox8" type="checkbox" name="" value="教师" class="css-checkbox">
+						<label for="checkbox8" class="css-label sme depressed">教师</label>
+					</div>
 				</div>
 				<div id="class-two">
-					<h2>二级分类</h2>
-					<input id="checkbox12" type="checkbox" name="" value="实习" class="css-checkbox">
-					<label for="checkbox12" class="css-label sme depressed">实习</label>
-					<input id="checkbox13" type="checkbox" name="" value="活动" class="css-checkbox">
-					<label for="checkbox13" class="css-label sme depressed">活动</label>
-					<input id="checkbox14" type="checkbox" name="" value="信息" class="css-checkbox">
-					<label for="checkbox14" class="css-label sme depressed">信息</label>
-					<input id="checkbox15" type="checkbox" name="" value="实习" class="css-checkbox">
-					<label for="checkbox15" class="css-label sme depressed">实习</label>
-					<input id="checkbox16" type="checkbox" name="" value="活动" class="css-checkbox">
-					<label for="checkbox16" class="css-label sme depressed">活动</label>
-					<input id="checkbox17" type="checkbox" name="" value="信息" class="css-checkbox">
-					<label for="checkbox17" class="css-label sme depressed">信息</label>
+					<h3>通知内容</h3>
+					<div class="class-layer">
+						<input id="checkbox12" type="checkbox" name="" value="官方" class="css-checkbox">
+						<label for="checkbox12" class="css-label sme depressed">官方</label>
+						<input id="checkbox13" type="checkbox" name="" value="活动" class="css-checkbox">
+						<label for="checkbox13" class="css-label sme depressed">活动</label>
+						<input id="checkbox14" type="checkbox" name="" value="实习" class="css-checkbox">
+						<label for="checkbox14" class="css-label sme depressed">实习</label>
+						<input id="checkbox15" type="checkbox" name="" value="招聘" class="css-checkbox">
+						<label for="checkbox15" class="css-label sme depressed">招聘</label>
+					</div>
+				</div>
+				<div class="class-layer">
+					<input type="submit" name="" value="订阅" class="button button-sub" id="sub-bu">
+					<input type="submit" name="" value="退订" class="button button-unsub" id="unsub-bu">
 				</div>
 			</form>
 		</div>
