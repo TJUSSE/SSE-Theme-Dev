@@ -21,12 +21,12 @@ $highlight-blue = #2267d9;
 $newspage-nav-height = 200px;
 
 body
-  overflow scroll
+  overflow-x scroll
   width 100%
 
 @media screen and (min-width: 1250px)
   body
-    overflow hidden
+    overflow-x hidden
     width 100%
 
 
@@ -44,7 +44,7 @@ body
   width 100%
   height 3%
   margin-top 0
-  background $highlight-blue
+  background #5996c5
 
 .linear-transition
   transition all linear .1s
@@ -54,3 +54,16 @@ body
   margin 0 auto
   height 100%
   width 1250px
+
+.directory
+  height 50px
+  font-size 0.95em
+  line-height 50px
+  color #696969
+
+.change-lang
+  float right
+  margin-right 65px
+
+.clear
+  clear both
