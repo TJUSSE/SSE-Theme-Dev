@@ -9,24 +9,42 @@ $sub-bgcolor = rgba(239, 239, 239, 1)
 	html, body
 		height 100%
 
-	header, form, h1, h2, h3, #prompt
+	header, form, h1, h2, h3, #sub-prompt
 		transition all 1s $easeOutCubic
+		
+	#unsub
+		position relative
+		margin 20px auto 150px auto
+		width 600px
+		height 280px
+		background #FFFFFF
+		background-image url(../resources/subscribe_bg-01.png)
+		background-repeat no-repeat
+		background-position 105% 105%
+		box-shadow 0px 5px 20px #CCCCCC
+		
+	#unsub-prompt
+		position absolute
+		text-align center
+		color #717171
+		font-weight 100
+		font-size 1.5em
+		height 200px
+		width 350px
+		overflow hidden
+		padding 50px 125px 50px 125px
 
 	.container
 		position relative
 		margin 20px auto 150px auto
-		width 700px
+		width 600px
 		height 400px
 		background #FFFFFF
 		background-image url(../resources/subscribe_bg-01.png)
 		background-repeat no-repeat
 		background-position 105% 105%
 		padding 50px
-		y-offset 5px
-		x-offset 0
-		opacity 10%
-		color #000
-		size 10px
+		box-shadow 0px 5px 20px #CCCCCC
 
 	.center-box
 		position relative
@@ -79,7 +97,7 @@ $sub-bgcolor = rgba(239, 239, 239, 1)
 	.sub-form .button-sub
 		border 0
 		background #6C8AA3
-		margin-left 200px
+		margin-left 150px
 
 	.sub-form .button-unsub
 		border 0
@@ -128,35 +146,45 @@ $sub-bgcolor = rgba(239, 239, 239, 1)
 	.sub-form .depressed
 		background-image url(../resources/depressed.png)
 
-	#prompt
+	#sub-prompt
 		position absolute
 		color #717171
 		font-weight 100
 		height 100px
 		width 350px
 		overflow hidden
-		margin 150px 200px 150px 200px
+		padding 150px 125px 200px 125px
 
-	#prompt p
+	#sub-prompt p
 		text-align center
 		width 200px
 		margin 20px auto 10px auto
 		font-size 1.5em
 
-	#prompt div
-		color #0A95F2
+	#sub-prompt div, #unsub-prompt div
 		font-size 0.8em
 		margin-left auto
 		margin-right auto
 		width 150px
 
-	#prompt button
+	#sub-prompt button
+		color #0A95F2
 		background transparent
 		border 0
 		width 50%
 		float left
 		margin-left auto
 		margin-right auto
+		
+	#unsub-prompt button
+		width 75px
+		color #0A95F2
+		background transparent
+		border 0
+		float left
+		margin-left auto
+		margin-right auto
+		font-size 0.8em
 
 	.invi
 		opacity 0
