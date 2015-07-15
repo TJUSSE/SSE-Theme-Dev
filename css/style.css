@@ -685,7 +685,7 @@ a {
   background-color: #efefef;
   display: inline-block;
 }
-table {
+.page-activity table {
   margin-top: 40px;
   line-height: 50px;
   color: #444;
@@ -693,16 +693,16 @@ table {
   text-align: left;
   width: 100%;
 }
-table td {
+.page-activity table td {
   padding-left: 10px;
 }
-table th {
+.page-activity table th {
   background-color: #efefef;
   text-align: center;
   line-height: 40px;
   padding: auto;
 }
-p {
+.page-activity p {
   line-height: 40px;
   font-size: 1.2em;
   color: #444;
@@ -817,7 +817,7 @@ p {
   width: 620px;
   display: inline-block;
 }
-table {
+.page-fund table {
   margin-top: 40px;
   line-height: 50px;
   color: #444;
@@ -825,16 +825,16 @@ table {
   text-align: left;
   width: 100%;
 }
-table td {
+.page-fund table td {
   padding-left: 10px;
 }
-table th {
+.page-fund table th {
   background-color: #efefef;
   text-align: center;
   line-height: 40px;
   padding: auto;
 }
-p {
+.page-fund p {
   line-height: 40px;
   font-size: 1.2em;
   color: #444;
@@ -1391,7 +1391,7 @@ p {
   width: 562px;
   height: 300px;
 }
-table {
+.page-personaltraining .content-wrap table {
   margin-top: 40px;
   line-height: 50px;
   color: #444;
@@ -1399,10 +1399,10 @@ table {
   text-align: left;
   width: 100%;
 }
-th {
+.page-personaltraining .content-wrap th {
   background-color: #efefef;
 }
-p {
+.page-personaltraining .content-wrap p {
   line-height: 40px;
   font-size: 1.2em;
   color: #444;
