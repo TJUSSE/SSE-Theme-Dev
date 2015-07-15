@@ -552,6 +552,16 @@ td {
 .page-about .clear-inline {
   clear: both;
 }
+.page-academic p {
+  line-height: 40px;
+  font-size: 1.2em;
+  color: #444;
+}
+.page-academic a {
+  color: #444;
+  font-size: 1.2em;
+  text-decoration: none;
+}
 .page-academic .directory {
   height: 50px;
   font-size: 0.95em;
@@ -624,6 +634,7 @@ td {
   line-height: 40px;
   padding: auto;
 }
+<<<<<<< HEAD
 .page-academic p {
   line-height: 40px;
   font-size: 1.2em;
@@ -634,6 +645,8 @@ td {
   font-size: 1.2em;
   text-decoration: none;
 }
+=======
+>>>>>>> 15785ffe3f0313a1ec8139145b21fa92e36a09b8
 .page-activity .directory {
   height: 50px;
   font-size: 0.95em;
@@ -1215,6 +1228,7 @@ td {
   min-width: 1250px;
 }
 .blue-bar {
+  height: 10px;
   width: 100%;
 }
 .tj-logo {
@@ -1446,13 +1460,13 @@ td {
   max-width: 1250px;
   height: auto;
 }
-.page-personaltraining .content-wrap .traning-title {
+.page-personaltraining .traning-title {
   margin-top: 50px;
   height: 1px;
   background: #d3d3d3;
   text-align: center;
 }
-.page-personaltraining .content-wrap .traning-title span {
+.page-personaltraining span {
   background: #fff;
   position: relative;
   top: -0.7em;
@@ -1460,12 +1474,12 @@ td {
   font-size: 1.4em;
   padding: 0 10px;
 }
-.page-personaltraining .content-wrap .largepic {
+.page-personaltraining .largepic {
   width: 1250px;
   height: 440px;
   background-color: #efefef;
 }
-.page-personaltraining .content-wrap .destination {
+.page-personaltraining .destination {
   vertical-align: top;
   text-align: center;
   padding: 10px 14px;
@@ -1473,30 +1487,29 @@ td {
   width: 280px;
   display: inline-block;
 }
-.page-personaltraining .content-wrap .destination #circlepic,
-.page-personaltraining .content-wrap .destination img {
+.page-personaltraining #circlepic img {
   margin: auto;
   border-radius: 50%;
   width: 200px;
   height: 200px;
 }
-.page-personaltraining .content-wrap .directIntro {
+.page-personaltraining .directIntro {
   min-height: 500px;
   width: 1250;
   margin-top: 50px;
 }
-.page-personaltraining .content-wrap .directIntro .direct {
+.page-personaltraining .direct {
   vertical-align: top;
   padding: 30px;
   min-height: 500px;
   width: 562px;
   display: inline-block;
 }
-.page-personaltraining .content-wrap .directIntro img {
+.page-personaltraining img {
   width: 562px;
   height: 300px;
 }
-.page-personaltraining .content-wrap table {
+.page-personaltraining table {
   margin-top: 40px;
   line-height: 50px;
   color: #444;
@@ -1504,10 +1517,10 @@ td {
   text-align: left;
   width: 100%;
 }
-.page-personaltraining .content-wrap th {
+.page-personaltraining th {
   background-color: #efefef;
 }
-.page-personaltraining .content-wrap p {
+.page-personaltraining p {
   line-height: 40px;
   font-size: 1.2em;
   color: #444;
@@ -1595,6 +1608,99 @@ td {
 .group-secondary .fa {
   float: right;
   margin-top: 0.4em;
+}
+.slider-wrapper {
+  width: 80%;
+  margin-top: 100px;
+}
+.slides-container {
+  width: 100%;
+  display: block;
+  text-align: center;
+  background: #d3d3d3;
+}
+.slide-wrapper {
+  display: inline-block;
+  margin-top: 0px;
+  width: 850px;
+  height: 340px;
+}
+.slides-container {
+  overflow: hidden;
+  display: inline-block;
+}
+#slider {
+  display: block;
+  width: 850px;
+  height: 100%;
+  overflow: hidden;
+}
+#slider .slide-imgs {
+  display: inline-block;
+}
+#slider img {
+  z-index: 5;
+  width: 850px !important;
+  height: 340px !important;
+  float: left;
+  margin-left: 0;
+  -webkit-transition: all ease-in-out 1s;
+          transition: all ease-in-out 1s;
+}
+#next,
+#prev {
+  position: absolute;
+  z-index: 999;
+  top: 50px;
+  height: 340px !important;
+  width: 100px;
+  background: none;
+  border: none;
+  font-size: 3em;
+  color: #fff;
+  opacity: 0.3;
+  outline: none;
+  -webkit-transition: all linear 0.2s;
+          transition: all linear 0.2s;
+}
+#next:hover,
+#prev:hover {
+  opacity: 1;
+}
+#prev {
+  left: 0;
+}
+#next {
+  right: 0;
+}
+.move-left {
+  margin-left: -100% !important;
+}
+.move-right {
+  margin-left: 100% !important;
+}
+.slide-dots {
+  z-index: 1000;
+  position: absolute;
+  margin: 0 auto;
+  margin-top: -30px;
+  margin-bottom: 15px !important;
+  display: table;
+  text-align: center;
+  width: 850px !important;
+}
+.slide-dots button {
+  width: 25px !important;
+  height: 25px !important;
+  margin: 0 2px;
+  border: none;
+  outline: none;
+  background: none;
+  color: #fff;
+  text-shadow: 5px 5px 5px #d3d3d3;
+}
+.slide-dots .activated {
+  color: #2267d9;
 }
 .sub {
   background: #efefef;
@@ -1802,6 +1908,92 @@ td {
 .sub .opaque {
   opacity: 0.3;
 }
+.page-teacher-content .teacher-content-container {
+  display: block;
+  width: 100%;
+}
+.page-teacher-content .teacher-content-left {
+  display: block;
+  width: 65%;
+  float: left;
+}
+.page-teacher-content .teacher-content-right {
+  display: block;
+  width: 30%;
+  float: right;
+}
+.page-teacher-content .teacher-intro-primary {
+  display: block;
+  padding: 30px;
+  float: left;
+  width: 100%;
+}
+.page-teacher-content .teacher-intro-primary-right {
+  display: inline-block;
+  float: left;
+  width: 400px;
+  margin-left: 57px;
+}
+.page-teacher-content .teacher-photo {
+  display: inline-block;
+  float: left;
+}
+.page-teacher-content .teacher-intro-primary-row {
+  display: block;
+  margin: 15px auto;
+  width: 100%;
+  color: #444;
+}
+.page-teacher-content .teacher-name {
+  font-size: 1.8em;
+}
+.page-teacher-content .teacher-name-pinyin {
+  margin-left: 15px;
+  font-size: 1.5em;
+  color: #d3d3d3;
+}
+.page-teacher-content .teacher-job {
+  display: block;
+  font-size: 1.2em;
+}
+.page-teacher-content .teacher-contact {
+  font-size: 0.8em;
+}
+.page-teacher-content .about-brief {
+  width: 100%;
+  display: inline-block;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.page-teacher-content .about-title {
+  height: 2px;
+  background: #d3d3d3;
+  text-align: center;
+}
+.page-teacher-content .about-title span {
+  background: #fff;
+  position: relative;
+  top: -0.7em;
+  color: #036eb8;
+  font-size: 1.1em;
+  padding: 0 10px;
+}
+.page-teacher-content .about-content {
+  width: 100%;
+  margin-top: 17px;
+  margin-bottom: 17px;
+}
+.page-teacher-content .about-content p {
+  text-align: left;
+}
+.page-teacher-content .about-content ul,
+.page-teacher-content .about-content ol {
+  margin-left: 25px;
+}
+.page-teacher-content .about-content li {
+  text-align: left;
+}
 .page-teachers-list {
   display: block;
 /*.content-wrap*/
@@ -1817,85 +2009,49 @@ td {
 .teacher-list-slides {
   display: block;
 }
-.slider-wrapper {
-  width: 80%;
-  margin-top: 100px;
+.department-containers {
+  display: table-cell;
+  width: 1280px;
 }
-.slides-container {
-  width: 100%;
-}
-.slide-wrapper {
-  display: inline-block;
-  margin-top: 0px;
-  width: 100%;
-  height: 440px;
-}
-.slides-container {
-  overflow: hidden;
-  display: inline-block;
-}
-#slider {
-  display: block;
-  width: 300%;
-  height: 100%;
-}
-#slider .slide-imgs {
-  display: inline-block;
-}
-#slider img {
-  width: 1250px !important;
-  height: 440px !important;
-  float: left;
-  -webkit-transition: all ease-in-out 0.8s;
-          transition: all ease-in-out 0.8s;
-}
-#next,
-#prev {
-  position: absolute;
-  z-index: 999;
-  top: 50px;
-  height: 440px !important;
-  width: 100px;
-  background: none;
-  border: none;
-  font-size: 3em;
-  color: #fff;
-  opacity: 0.3;
-  outline: none;
-  -webkit-transition: all linear 0.2s;
-          transition: all linear 0.2s;
-}
-#next:hover,
-#prev:hover {
-  opacity: 1;
-}
-#prev {
-  left: 0;
-}
-#next {
-  right: 0;
-}
-.move-left {
-  margin-left: -100%;
-}
-.slide-dots {
-  z-index: 1000;
-  position: absolute;
-  bottom: 6px;
-  display: table;
-  text-align: center;
-  width: 1250px !important;
+.department-wrapper {
   margin: 0 auto;
+  margin-top: 40px;
+  width: 100%;
 }
-.slide-dots button {
-  width: 25px !important;
-  height: 25px !important;
-  margin: 0 2px;
-  border: none;
-  outline: none;
-  background: none;
-  color: #fff;
+.department {
+  width: 260px;
+  height: 200px;
+  float: left;
+  text-align: center;
+  margin-left: 40px;
+  border-radius: 4px;
 }
-.slide-dots .activated {
+.department-name {
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  margin-left: 5%;
+  line-height: 1.5em;
+  font-size: 1.15em;
+  width: 85%;
+  border-bottom: #d3d3d3 1px solid;
+}
+.teacher-name-row {
+  margin-top: 0.5em;
+  line-height: 1.4em;
+  font-size: 0.9em;
+  width: 100%;
+}
+.teacher-name-row a {
+  display: inline-block;
+  text-align: center;
+  width: 80px;
+  text-decoration: none;
   color: #2267d9;
+}
+.teacher-name-row a:visited {
+  color: #2267d9;
+}
+.teacher {
+  width: 80px;
+  text-align: left;
 }

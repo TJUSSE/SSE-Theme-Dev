@@ -1,0 +1,88 @@
+$slide-height = 340px
+$slide-width = 850px
+
+.slider-wrapper
+  width: 80%;
+  margin-top 100px
+
+.slides-container
+  width 100%
+  display block
+  text-align center
+  background lightgrey
+
+.slide-wrapper
+  display inline-block
+  margin-top 0px
+  width $slide-width
+  height $slide-height
+
+.slides-container
+  overflow hidden
+  display inline-block
+
+#slider
+  display block
+  width $slide-width
+  height 100%
+  overflow hidden
+  .slide-imgs
+    display inline-block
+  img
+    z-index 5
+    width  $slide-width !important
+    height $slide-height !important
+    float left
+    margin-left 0
+    transition all ease-in-out 1s
+
+#next, #prev
+  position absolute
+  z-index 999
+  top 50px
+  height $slide-height !important
+  width 100px
+  background none
+  border none
+  font-size 3em
+  color white
+  opacity 0.3
+  outline none
+  transition all linear .2s
+
+#next:hover, #prev:hover
+  opacity 1
+
+#prev
+  left 0
+
+#next
+  right 0
+
+.move-left
+  margin-left -100%!important
+
+.move-right
+  margin-left 100%!important
+
+.slide-dots
+  z-index 1000
+  position absolute
+  margin 0 auto
+  margin-top -30px
+  margin-bottom 15px!important
+  display table
+  text-align center
+  width $slide-width!important
+
+  button
+    width 25px!important
+    height 25px!important
+    margin 0 2px
+    border none
+    outline none
+    background none
+    color white
+    text-shadow: 5px 5px 5px lightgrey;
+  .activated
+    color $highlight-blue

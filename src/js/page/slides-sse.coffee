@@ -38,14 +38,28 @@ $(document).ready ()->
 
 
   $('#prev').click( ()->
+    if window.g.currentSlideImg is 0 then (
+      window.g.changeSlide(window.g.imgNum - 1)
+      return 0
+    )
     if window.g.currentSlideImg isnt 0 then (
       window.g.changeSlide(window.g.currentSlideImg - 1)
     )
+
   )
 
   $('#next').click( ()->
+    if window.g.currentSlideImg is (window.g.imgNum - 1) then (
+      window.g.changeSlide(0)
+      return 0
+    )
     if window.g.currentSlideImg isnt (window.g.imgNum - 1) then (
       window.g.changeSlide(window.g.currentSlideImg + 1)
     )
+
   )
 
+  setInterval(()->
+    $('#next').click()
+  , 5000
+  )
