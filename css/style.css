@@ -519,13 +519,13 @@ td {
 .page-about .about-text {
   display: inline-block;
   width: 590px;
-  height: 430px;
-  font-size: 1.1em;
-  line-height: 1.6em;
+  font-size: 1.05em;
   text-align: left;
 }
 .page-about .about-text p {
   margin-top: 0;
+  font-size: 1.05em !important;
+  line-height: 1.65em !important;
 }
 .page-about .about-text ul {
   display: block;
@@ -534,6 +534,8 @@ td {
 }
 .page-about .about-text ul li {
   margin-left: 18px;
+  font-size: 1.05em !important;
+  line-height: 1.65em !important;
 }
 .page-about .on-left {
   float: left;
