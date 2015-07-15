@@ -552,6 +552,16 @@ td {
 .page-about .clear-inline {
   clear: both;
 }
+.page-academic p {
+  line-height: 40px;
+  font-size: 1.2em;
+  color: #444;
+}
+.page-academic a {
+  color: #444;
+  font-size: 1.2em;
+  text-decoration: none;
+}
 .page-academic .directory {
   height: 50px;
   font-size: 0.95em;
@@ -623,16 +633,6 @@ table th {
   text-align: center;
   line-height: 40px;
   padding: auto;
-}
-p {
-  line-height: 40px;
-  font-size: 1.2em;
-  color: #444;
-}
-a {
-  color: #444;
-  font-size: 1.2em;
-  text-decoration: none;
 }
 .page-activity .directory {
   height: 50px;
@@ -1110,6 +1110,7 @@ a {
   min-width: 1250px;
 }
 .blue-bar {
+  height: 10px;
   width: 100%;
 }
 .tj-logo {
@@ -1341,13 +1342,13 @@ a {
   max-width: 1250px;
   height: auto;
 }
-.page-personaltraining .content-wrap .traning-title {
+.page-personaltraining .traning-title {
   margin-top: 50px;
   height: 1px;
   background: #d3d3d3;
   text-align: center;
 }
-.page-personaltraining .content-wrap .traning-title span {
+.page-personaltraining span {
   background: #fff;
   position: relative;
   top: -0.7em;
@@ -1355,12 +1356,12 @@ a {
   font-size: 1.4em;
   padding: 0 10px;
 }
-.page-personaltraining .content-wrap .largepic {
+.page-personaltraining .largepic {
   width: 1250px;
   height: 440px;
   background-color: #efefef;
 }
-.page-personaltraining .content-wrap .destination {
+.page-personaltraining .destination {
   vertical-align: top;
   text-align: center;
   padding: 10px 14px;
@@ -1368,34 +1369,29 @@ a {
   width: 280px;
   display: inline-block;
 }
-.page-personaltraining .content-wrap .destination #circlepic,
-.page-personaltraining .content-wrap .destination img {
+.page-personaltraining #circlepic img {
   margin: auto;
   border-radius: 50%;
   width: 200px;
   height: 200px;
 }
-.page-personaltraining .content-wrap .directIntro {
+.page-personaltraining .directIntro {
   min-height: 500px;
   width: 1250;
   margin-top: 50px;
 }
-.page-personaltraining .content-wrap .directIntro .direct {
+.page-personaltraining .direct {
   vertical-align: top;
   padding: 30px;
   min-height: 500px;
   width: 562px;
   display: inline-block;
 }
-.page-personaltraining .content-wrap .directIntro img {
+.page-personaltraining img {
   width: 562px;
   height: 300px;
 }
-<<<<<<< HEAD
-.page-personaltraining .content-wrap .directIntro table {
-=======
-.page-personaltraining .content-wrap table {
->>>>>>> 2d31bdebea36298c17fe904043987e25cf6717cf
+.page-personaltraining table {
   margin-top: 40px;
   line-height: 50px;
   color: #444;
@@ -1403,17 +1399,10 @@ a {
   text-align: left;
   width: 100%;
 }
-<<<<<<< HEAD
-.page-personaltraining .content-wrap .directIntro th {
+.page-personaltraining th {
   background-color: #efefef;
 }
-.page-personaltraining .content-wrap .directIntro p {
-=======
-.page-personaltraining .content-wrap th {
-  background-color: #efefef;
-}
-.page-personaltraining .content-wrap p {
->>>>>>> 2d31bdebea36298c17fe904043987e25cf6717cf
+.page-personaltraining p {
   line-height: 40px;
   font-size: 1.2em;
   color: #444;
@@ -1502,7 +1491,6 @@ a {
   float: right;
   margin-top: 0.4em;
 }
-<<<<<<< HEAD
 .slider-wrapper {
   width: 80%;
   margin-top: 100px;
@@ -1596,19 +1584,12 @@ a {
 .slide-dots .activated {
   color: #2267d9;
 }
-.container {
-  position: absolute;
-  margin-left: 10%;
-  margin-right: 10%;
-  width: 100%;
-=======
 .sub {
   background: #efefef;
   overflow: hidden;
 }
 .sub html,
 .sub body {
->>>>>>> 2d31bdebea36298c17fe904043987e25cf6717cf
   height: 100%;
 }
 .sub header,
@@ -1808,6 +1789,92 @@ a {
 }
 .sub .opaque {
   opacity: 0.3;
+}
+.page-teacher-content .teacher-content-container {
+  display: block;
+  width: 100%;
+}
+.page-teacher-content .teacher-content-left {
+  display: block;
+  width: 65%;
+  float: left;
+}
+.page-teacher-content .teacher-content-right {
+  display: block;
+  width: 30%;
+  float: right;
+}
+.page-teacher-content .teacher-intro-primary {
+  display: block;
+  padding: 30px;
+  float: left;
+  width: 100%;
+}
+.page-teacher-content .teacher-intro-primary-right {
+  display: inline-block;
+  float: left;
+  width: 400px;
+  margin-left: 57px;
+}
+.page-teacher-content .teacher-photo {
+  display: inline-block;
+  float: left;
+}
+.page-teacher-content .teacher-intro-primary-row {
+  display: block;
+  margin: 15px auto;
+  width: 100%;
+  color: #444;
+}
+.page-teacher-content .teacher-name {
+  font-size: 1.8em;
+}
+.page-teacher-content .teacher-name-pinyin {
+  margin-left: 15px;
+  font-size: 1.5em;
+  color: #d3d3d3;
+}
+.page-teacher-content .teacher-job {
+  display: block;
+  font-size: 1.2em;
+}
+.page-teacher-content .teacher-contact {
+  font-size: 0.8em;
+}
+.page-teacher-content .about-brief {
+  width: 100%;
+  display: inline-block;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.page-teacher-content .about-title {
+  height: 2px;
+  background: #d3d3d3;
+  text-align: center;
+}
+.page-teacher-content .about-title span {
+  background: #fff;
+  position: relative;
+  top: -0.7em;
+  color: #036eb8;
+  font-size: 1.1em;
+  padding: 0 10px;
+}
+.page-teacher-content .about-content {
+  width: 100%;
+  margin-top: 17px;
+  margin-bottom: 17px;
+}
+.page-teacher-content .about-content p {
+  text-align: left;
+}
+.page-teacher-content .about-content ul,
+.page-teacher-content .about-content ol {
+  margin-left: 25px;
+}
+.page-teacher-content .about-content li {
+  text-align: left;
 }
 .page-teachers-list {
   display: block;
