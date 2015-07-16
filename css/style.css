@@ -840,7 +840,7 @@ td {
   color: #444;
 }
 .page-index {
-  background: url("../resources/bg.jpg") center center no-repeat;
+  background: url("../resources/bg-new.png");
 }
 .page-index header {
   position: absolute;
@@ -953,8 +953,11 @@ td {
   bottom: 0;
   height: 70px;
   line-height: 70px;
-  color: #fff;
+  color: rgba(255,255,255,0.9);
   background: rgba(0,0,0,0.52);
+}
+.page-index .slash {
+  margin: 0 5px;
 }
 .page-index .logo-container {
   z-index: 1;
@@ -971,12 +974,22 @@ td {
   background: #2267d9;
 }
 .page-index .logo-main-part {
-  margin-top: 35px;
-  margin-left: 45px;
+  margin-top: -10px;
+  margin-left: 55px;
 }
 .page-index .tj-logo {
   width: 85%;
   height: 35%;
+  -webkit-filter: brightness(10000%);
+          filter: brightness(10000%);
+}
+.page-index .logo-introduction {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 35px;
+  font-size: 1.2em;
+  color: rgba(255,255,255,0.9);
 }
 .page-infolist .content-wrap {
   position: relative;
@@ -1002,14 +1015,15 @@ td {
 .page-infolist .info-row {
   height: 2.5em;
   line-height: 2.5em;
-  width: 850px;
+  font-size: 1em;
+  width: 880px;
   vertical-align: center;
   margin: auto 0;
   cursor: pointer;
   border-radius: 4px;
   -webkit-transition: all linear 0.2s;
           transition: all linear 0.2s;
-  padding: 0 10px;
+  padding-left: 10px;
 }
 .page-infolist .info-row:hover {
   background: #d3d3d3;
@@ -1018,11 +1032,11 @@ td {
   color: #5996c5;
 }
 .page-infolist .info-title {
-  margin-left: 25px;
+  margin-left: 15px;
 }
 .page-infolist .change-page-container {
   margin-bottom: 15px;
-  width: 750px;
+  width: 850px;
   text-align: center;
 }
 .page-infolist .change-page-btn {

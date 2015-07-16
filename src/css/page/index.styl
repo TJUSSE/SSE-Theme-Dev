@@ -1,7 +1,7 @@
 @require '../variable.styl'
 
 .page-index
-  background url(../resources/bg.jpg) center center no-repeat
+  background url(../resources/bg-new.png) // center center no-repeat
   // background-size cover
 
   header
@@ -110,8 +110,11 @@
     bottom 0
     height $footer-height
     line-height $footer-height
-    color: #ffffff
+    color rgba(255,255,255,0.9)
     background $background-black
+
+  .slash
+    margin 0 5px
 
   // Logo part
   .logo-container
@@ -129,11 +132,18 @@
       background $highlight-blue
 
   .logo-main-part
-    margin-top 35px
-    margin-left 45px
-
-
+    margin-top -10px
+    margin-left 55px
 
   .tj-logo
     width 85%
     height 35%
+    filter brightness(10000%)
+
+  .logo-introduction
+    width 100%
+    margin 0 auto
+    text-align center
+    margin-top 35px
+    font-size 1.2em
+    color rgba(255,255,255,0.9)
