@@ -1674,11 +1674,7 @@ td {
   width: 562px;
   height: 300px;
 }
-<<<<<<< HEAD
-.page-personaltraining .content-wrap .directIntro table {
-=======
 .page-personaltraining table {
->>>>>>> caeefcaf0fe46b5b70b82cade3e02114df0946d4
   margin-top: 40px;
   line-height: 50px;
   color: #444;
@@ -1686,9 +1682,6 @@ td {
   text-align: left;
   width: 100%;
 }
-<<<<<<< HEAD
-.page-personaltraining .content-wrap .directIntro th {
-=======
 .page-personaltraining th {
   background-color: #efefef;
 }
@@ -1753,7 +1746,6 @@ td {
 .page-recruit .content-wrap .pic {
   min-height: 300px;
   width: 413px;
->>>>>>> caeefcaf0fe46b5b70b82cade3e02114df0946d4
   background-color: #efefef;
   display: inline-block;
 }
@@ -1818,38 +1810,17 @@ td {
   text-align: left;
   width: 100%;
 }
-<<<<<<< HEAD
-.page-personaltraining .content-wrap .directIntro p {
-  line-height: 40px;
-  font-size: 1.2em;
-  color: #444;
-}
-.page-personaltraining .content-wrap table {
-  margin-top: 40px;
-  line-height: 50px;
-  color: #444;
-  font-size: 1.2em;
-  text-align: left;
-  width: 100%;
-}
-.page-personaltraining .content-wrap th {
-=======
 .page-recruit table td {
   padding-left: 10px;
   width: 155px;
 }
 .page-recruit table th {
->>>>>>> caeefcaf0fe46b5b70b82cade3e02114df0946d4
   background-color: #efefef;
   text-align: center;
   line-height: 40px;
   padding: auto;
 }
-<<<<<<< HEAD
-.page-personaltraining .content-wrap p {
-=======
 .page-recruit p {
->>>>>>> caeefcaf0fe46b5b70b82cade3e02114df0946d4
   line-height: 40px;
   font-size: 1.2em;
   color: #444;
@@ -2048,12 +2019,6 @@ td {
 .sub {
   background: #efefef;
   overflow: hidden;
-<<<<<<< HEAD
-=======
-}
-.sub html,
-.sub body {
->>>>>>> caeefcaf0fe46b5b70b82cade3e02114df0946d4
   height: 100%;
   width: 100%;
 }
