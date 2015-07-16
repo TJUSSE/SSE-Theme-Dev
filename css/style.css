@@ -1533,6 +1533,14 @@ td {
   font-size: 1.2em;
   color: rgba(255,255,255,0.9);
 }
+.info-content .info-deadline {
+  display: block;
+  width: 100%;
+  text-align: center;
+  color: #ff4500;
+  font-size: 1.2em;
+  margin-bottom: 25px;
+}
 .page-infolist .content-wrap {
   position: relative;
   margin: 0 auto;
@@ -1965,6 +1973,9 @@ td {
   display: block;
   width: 100%;
 }
+.page-news .content .content-wrap {
+  min-height: 434px;
+}
 .page-news .news-text {
   float: left;
   width: 65%;
@@ -2012,7 +2023,7 @@ td {
   line-height: 1em;
 }
 .page-news .sidebar-news-relate a .fa:after {
-  content: "��?";
+  content: "�?";
 }
 .page-news .sidebar-news-relate a:hover {
   color: #2267d9;
