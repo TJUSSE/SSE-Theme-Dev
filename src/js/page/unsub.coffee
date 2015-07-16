@@ -3,4 +3,4 @@ $(document).ready ()->
 		window.location = 'sub.html'
 
 	$('#close-bu').click ()->
-		window.top.close() # TODO
+		window.location = 'sub.html'
