@@ -2398,8 +2398,8 @@ p {
   display: inline-block;
 }
 .slide {
-  -webkit-transition: all ease-in-out 1s;
-          transition: all ease-in-out 1s;
+  -webkit-transition: all ease-in-out 0.4s;
+          transition: all ease-in-out 0.4s;
   z-index: 5;
   width: 850px !important;
   height: 340px !important;
@@ -2442,7 +2442,7 @@ p {
   right: 0;
 }
 .move-left {
-  margin-left: -100% !important;
+  margin-left: -850px !important;
 }
 .move-right {
   margin-left: 100% !important;

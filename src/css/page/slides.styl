@@ -31,7 +31,7 @@ $slide-width = 850px
 
 
 .slide
-  transition all ease-in-out 1s
+  transition all ease-in-out 0.4s
   z-index 5
   width  $slide-width !important
   height $slide-height !important
@@ -71,7 +71,7 @@ $slide-width = 850px
   right 0
 
 .move-left
-  margin-left -100%!important
+  margin-left ($slide-width * (-1)) !important
 
 .move-right
   margin-left 100%!important
