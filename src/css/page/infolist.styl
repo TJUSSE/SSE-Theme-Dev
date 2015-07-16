@@ -18,7 +18,8 @@
 
   .info-list-left
     float left
-    width 900px
+    width 850px
+    min-height 521px
 
   .info-list-right
     width 300px
@@ -26,11 +27,19 @@
     margin-right 50px
 
   .info-row
-    height 2em
-    line-height 2em
-    width 950px
+    height 2.5em
+    // font-size
+    line-height 2.5em
+    width 850px
     vertical-align center
     margin auto 0
+    cursor pointer
+    border-radius 4px
+    transition all linear .2s
+    padding 0 10px
+
+  .info-row:hover
+    background lightgrey
 
   .info-date
     color #5996c5
@@ -38,4 +47,27 @@
   .info-title
     margin-left 25px
 
+  .change-page-container
+    margin-bottom 15px
+    width 750px
+    text-align center
 
+  .change-page-btn
+    outline none
+    background none
+    border none
+
+  .current-page
+    color $highlight-blue
+    font-weight bold
+
+  .info-deadline
+    float right
+    /*background red*/
+    /*color white*/
+    border-radius 4px
+    width 180px
+    text-align center
+
+  .info-deadline:before
+    content "到期时间："
