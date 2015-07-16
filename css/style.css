@@ -52,6 +52,9 @@ body {
 .clear {
   clear: both;
 }
+a {
+  text-decoration: none;
+}
 
 
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
@@ -1401,7 +1404,7 @@ td {
   left: 0px;
   top: 0px;
   width: 100%;
-  height: 50px;
+  height: 65px;
   background: rgba(0,0,0,0.52);
   min-width: 1250px;
 }
@@ -1413,7 +1416,7 @@ td {
 }
 .page-index .nav-title {
   color: #fff;
-  line-height: 50px;
+  line-height: 60px;
   width: 25%;
   float: left;
   cursor: pointer;
@@ -1421,13 +1424,16 @@ td {
   -webkit-transition: all 0.2s ease-out;
           transition: all 0.2s ease-out;
 }
+.page-index .nav-title a {
+  color: #fff;
+}
 .page-index .nav-title:hover {
   background: rgba(0,0,0,0.65);
 }
 .page-index .nav-lists-container {
   z-index: 3;
   position: absolute;
-  top: 50px;
+  top: 65px;
   bottom: 70px;
   left: 0;
   display: block;
@@ -1462,8 +1468,8 @@ td {
 }
 .page-index ul {
   overflow: hidden;
-  top: 50px;
-  bottom: 50px;
+  top: 65px;
+  bottom: 65px;
   left: 0px;
   margin-top: 0px;
   width: 100%;
@@ -1544,6 +1550,19 @@ td {
   margin-top: 35px;
   font-size: 1.2em;
   color: rgba(255,255,255,0.9);
+}
+.page-index .blue-line {
+  background: #2267d9;
+/*text-align left*/
+/*float left*/
+  width: 0;
+  height: 5px !important;
+  bottom: 5px;
+  -webkit-transition: all 0.2s ease-in-out;
+          transition: all 0.2s ease-in-out;
+}
+.page-index .blue-line-activated {
+  width: 100%;
 }
 .info-content .info-deadline {
   display: block;

@@ -45,6 +45,7 @@
   $('.nav-title').hover( ()->
       index = $(this).index()
       $('.nav-list').eq(index).addClass('nav-list-active')
+      $('.blue-line').eq(index).addClass('blue-line-activated')
       # console.log('Index: ' + index)
       return null
     ,
@@ -52,6 +53,8 @@
       index = $(this).index()
       # console.log('Remove index: ' + index)
       $('.nav-list').eq(index).removeClass('nav-list-active')
+      $('.blue-line').eq(index).removeClass('blue-line-activated')
       return null
   )
+
   console.log 'Initialize done.'
