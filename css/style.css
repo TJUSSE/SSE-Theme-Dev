@@ -1631,7 +1631,7 @@ td {
   background: #d3d3d3;
   text-align: center;
 }
-.page-personaltraining span {
+.page-personaltraining .traning-title span {
   background: #fff;
   position: relative;
   top: -0.7em;
@@ -1670,7 +1670,7 @@ td {
   width: 562px;
   display: inline-block;
 }
-.page-personaltraining img {
+.page-personaltraining .direct img {
   width: 562px;
   height: 300px;
 }
