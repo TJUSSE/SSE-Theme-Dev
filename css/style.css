@@ -634,6 +634,16 @@ td {
   line-height: 40px;
   padding: auto;
 }
+.page-academic p {
+  line-height: 40px;
+  font-size: 1.2em;
+  color: #444;
+}
+.page-academic a {
+  color: #444;
+  font-size: 1.2em;
+  text-decoration: none;
+}
 .page-activity .directory {
   height: 50px;
   font-size: 0.95em;
@@ -1567,6 +1577,155 @@ td {
   line-height: 40px;
   font-size: 1.2em;
   color: #444;
+}
+.page-recruit .directory {
+  height: 50px;
+  font-size: 0.95em;
+  line-height: 50px;
+  color: #696969;
+}
+.page-recruit .recruit-container {
+  padding-top: 0;
+  min-height: 559px;
+  width: 100%;
+}
+.page-recruit .content-wrap {
+  position: relative;
+  margin: 0 auto;
+  width: 1250px;
+  height: auto;
+}
+.page-recruit .content-wrap .largepic img {
+  width: 1250px;
+  height: 440px;
+  background-color: #efefef;
+}
+.page-recruit .content-wrap .recruit-title {
+  margin-top: 50px;
+  height: 1px;
+  background: #d3d3d3;
+  text-align: center;
+}
+.page-recruit .content-wrap .recruit-title span {
+  background: #fff;
+  position: relative;
+  top: -0.7em;
+  color: #036eb8;
+  font-size: 1.4em;
+  padding: 0 10px;
+}
+.page-recruit .content-wrap .ul-block {
+  width: 1250px;
+  margin-top: 30px;
+}
+.page-recruit .content-wrap .ul-block ul {
+  line-height: 40px;
+}
+.page-recruit .content-wrap .ul-block ul li {
+  font-size: 1.2em;
+  font-weight: normal;
+  color: #444;
+  list-style-type: none;
+}
+.page-recruit .content-wrap .pic-container {
+  width: 1250px;
+  margin-top: 20px;
+}
+.page-recruit .content-wrap .pic {
+  min-height: 300px;
+  width: 413px;
+  background-color: #efefef;
+  display: inline-block;
+}
+.page-recruit .content-wrap .directIntro {
+  width: 1250;
+  margin-top: 30px;
+}
+.page-recruit .content-wrap .one-half {
+  vertical-align: top;
+  width: 620px;
+  display: inline-block;
+}
+.page-recruit .content-wrap .one-third {
+  vertical-align: top;
+  padding: 5px 30px;
+  width: 350px;
+  display: inline-block;
+}
+.page-recruit .content-wrap .one-third img {
+  width: 350px;
+  height: 300px;
+}
+.page-recruit .content-wrap .one-third a {
+  text-decoration: none;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #444;
+  margin-top: 10px;
+  margin-left: 80px;
+  float: left;
+}
+.page-recruit .content-wrap .pic-block-left {
+  padding: 10px;
+  margin-top: 20px;
+  display: inline-block;
+  float: left;
+}
+.page-recruit .content-wrap .pic-block-left img {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+.page-recruit .content-wrap .pic-block-right {
+  padding: 10px;
+  margin-top: 20px;
+  display: inline-block;
+  float: right;
+}
+.page-recruit .content-wrap .pic-block-right img {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+.page-recruit .content-wrap #connect {
+  margin-left: 200px;
+}
+.page-recruit table {
+  margin-top: 40px;
+  line-height: 50px;
+  color: #444;
+  font-size: 1.2em;
+  text-align: left;
+  width: 100%;
+}
+.page-recruit table td {
+  padding-left: 10px;
+  width: 155px;
+}
+.page-recruit table th {
+  background-color: #efefef;
+  text-align: center;
+  line-height: 40px;
+  padding: auto;
+}
+.page-recruit p {
+  line-height: 40px;
+  font-size: 1.2em;
+  color: #444;
+}
+.page-recruit a {
+  margin: 15px;
+  text-decoration: none;
+  color: #444;
+  font-size: 1.2em;
+  font-weight: bold;
+  float: right;
+}
+.page-recruit h2 {
+  font-size: 1.4em;
+  text-align: center;
+  margin: 5px;
+  padding: 3px;
 }
 .side-bar-selection {
   position: absolute;
