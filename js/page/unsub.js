@@ -1,1 +1,1 @@
-(function(){$(document).ready(function(){return $("#resub-bu").click(function(){return window.location="sub.html"}),$("#close-bu").click(function(){return window.location="sub.html"})})}).call(this);
+(function(){$(document).ready(function(){return $("#resub-bu").click(function(){return window.location="sub.html"}),$("#close-bu").click(function(){return window.location="http://sse.tongji.edu.cn"})})}).call(this);
