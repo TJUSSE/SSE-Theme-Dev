@@ -17,12 +17,12 @@ $(document).ready ()->
 			, "json"
 
 	$('#unsub-bu').click ()->
-		window.location = 'unsub.html'
+		window.open('unsub.html', '_self', '')
 		$.post "", {'unsub':'unsub'},
 			(status)->
 				status = parseInt(status)
 				if status == 0
-					window.location = 'unsub.html'
+					window.open('unsub.html', '_self')
 			, "json"
 
 	$('#close-bu').click ()->

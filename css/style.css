@@ -839,7 +839,7 @@ td {
   padding-left: 0;
 }
 .dashboard .dash-category-secondary {
-  padding-left: 65px;
+  padding-left: 30px;
   border-left: 5px;
   border-left-style: outset;
   border-left-color: transparent;
@@ -848,6 +848,12 @@ td {
   cursor: pointer;
   -webkit-transition: background 0.2s linear, color 0.2s linear;
           transition: background 0.2s linear, color 0.2s linear;
+}
+.dashboard .dash-category-secondary-box:hover span {
+  color: #fff;
+}
+.dashboard .dash-category-secondary span {
+  color: transparent;
 }
 .dashboard .dash-category-title:hover {
   color: #eee;
@@ -862,6 +868,64 @@ td {
   content: '';
   color: #2ea7e0;
 }
+<<<<<<< HEAD
+.email {
+  background: #fff;
+  height: 100%;
+  width: 100%;
+  -webkit-transition: all 1s cubic-bezier(0.215, 0.61, 0.355, 1);
+          transition: all 1s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.email h1,
+.email h2,
+.email h3 {
+  font-weight: 200;
+}
+.email header {
+  color: #999;
+  padding: 0 20px 0 20px;
+}
+.email h1 {
+  font-size: 1.5em;
+  margin: 20px 0 5px 0;
+}
+.email .email-container {
+  height: 80%;
+  padding: 0 20px 0 20px;
+}
+.email h2 {
+  font-size: 1.5em;
+  margin: 20px 0 5px 0;
+}
+.email h3 {
+  color: #aaa;
+  padding: 0 30px 0 30px;
+  margin: 0 0 15px 0;
+}
+.email .content,
+.email .email-container a {
+  padding: 0 30px 0 30px;
+  margin: 15px 0 15px 0;
+}
+.email .content div {
+  color: #000;
+}
+.email .email-footer {
+  line-height: 20px;
+  height: 40px;
+  font-size: 0.8em;
+  background: #efefef;
+  color: #999;
+  padding: 30px 30px 30px 30px;
+}
+.email a {
+  color: #0a95f2;
+  text-decoration: none;
+  margin: 10px 0 10px 0;
+}
+.email label {
+  color: #b67f64;
+=======
 .sub-enteremail {
   background: #efefef;
   overflow: hidden;
@@ -1214,6 +1278,7 @@ input[type=submit] {
 .dialog.dialog--open button {
   -webkit-animation: anim-elem-2 0.7s ease-out both;
   animation: anim-elem-2 0.7s ease-out both;
+>>>>>>> b00042a580dca50638e4b17422b3d2dc261c3c69
 }
 .news-footer {
   display: block;
@@ -2048,6 +2113,26 @@ input[type=submit] {
   font-size: 1.2em;
   color: #444;
 }
+.page-personaltraining table {
+  margin-top: 40px;
+  line-height: 50px;
+  color: #444;
+  font-size: 1.2em;
+  text-align: left;
+  width: 100%;
+}
+.page-personaltraining th {
+  background-color: #efefef;
+}
+.page-personaltraining p {
+  line-height: 40px;
+  font-size: 1.2em;
+}
+.page-personaltraining p color #444 {
+  line-height: 40px;
+  font-size: 1.2em;
+  color: #444;
+}
 .page-recruit .directory {
   height: 50px;
   font-size: 0.95em;
@@ -2376,7 +2461,10 @@ input[type=submit] {
 }
 .sub {
   background: #efefef;
+<<<<<<< HEAD
+=======
   overflow: hidden;
+>>>>>>> b00042a580dca50638e4b17422b3d2dc261c3c69
   height: 100%;
   width: 100%;
 }
@@ -2415,12 +2503,15 @@ input[type=submit] {
   position: relative;
   margin: 20px auto 150px auto;
   width: 600px;
+<<<<<<< HEAD
+=======
   height: 420px;
+>>>>>>> b00042a580dca50638e4b17422b3d2dc261c3c69
   background: #fff;
   background-image: url("../resources/subscribe_bg-01.png");
   background-repeat: no-repeat;
   background-position: 105% 105%;
-  padding: 50px;
+  padding: 50px 50px 80px 50px;
   box-shadow: 0px 5px 20px #ccc;
 }
 .sub .center-box {
@@ -2451,7 +2542,7 @@ input[type=submit] {
 }
 .sub .sub-form {
   position: relative;
-  height: 80%;
+  height: 100%;
   font-family: "Open Sans", Segoe, Tahoma, arial, "Hiragino Sans GB", "Hiragino Sans GB W3", STHeiti, "Microsoft YaHei", sans-serif;
   color: #999;
   text-shadow: 0.1px 0.1px 0.1px #fff;
