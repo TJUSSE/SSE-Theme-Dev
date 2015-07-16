@@ -891,6 +891,9 @@ td {
   font-size: 1.15em;
   line-height: 2.5em;
 }
+.footer-list-item {
+  line-height: 1.6em;
+}
 .news-footer-author {
   margin-top: 30px;
   line-height: 50px;
