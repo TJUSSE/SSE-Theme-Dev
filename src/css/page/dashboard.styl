@@ -1,0 +1,110 @@
+@require '../variable.styl'
+
+$sub-bgcolor = rgba(239, 239, 239, 1)
+
+.dashboard
+	background #EFEFEF
+	overflow hidden
+	height 100%
+	width 100%
+
+	.banner
+		background #58819E
+		width 100%
+		height 70px
+		color #FFFFFF
+
+	.banner i, .banner div
+		height 70px
+		line-height 70px
+		float left
+		text-align center
+		padding 0 15px 0 15px
+		
+	.banner i
+		font-size 2em
+
+	.banner div
+		font-size 1.4em
+
+	.banner p, .banner button
+		height 70px
+		float right
+		line-height 70px
+		text-align center
+		color #FFFFFF
+		margin 0
+		padding 0 10px 0 10px
+
+	#logout-bu
+		background transparent
+		border 0
+		
+	#container
+		height 100%
+		width 100%
+
+	#panel
+		background #3E3A39
+		height 100%
+		min-width 200px
+		width 20%
+		float left
+
+	#wrapper
+		width 80%
+		min-width 800px
+		height 100%
+		float left
+
+	#title
+		background transparent
+		height 100px
+		width 100%
+
+	#content
+		background #FFFFFF
+		height 100%
+		width 100%
+	
+	.dash-box-categories-container
+		font-size 1.05em
+		line-height 35px
+		transition height 0.2s linear
+		
+	.box-category
+		margin 5px 0
+		cursor pointer
+
+	.dash-category-title
+		color #EEEEEE
+		font-size 1.1em
+		cursor pointer
+		padding-left 10px
+		transition background 0.2s linear, color 0.2s linear
+
+	.dash-category-secondary-box
+		padding-left 0
+		
+	.dash-category-secondary
+		padding-left 65px
+		border-left 5px
+		border-left-style outset
+		border-left-color transparent
+		color #AAAAAA
+		font-size 1.1em
+		cursor pointer
+		transition background 0.2s linear, color 0.2s linear
+		
+	.dash-category-title:hover
+		color #EEEEEE
+		background #506885
+		
+	.dash-category-secondary:hover
+		color #EEEEEE
+		background #506885
+		border-left-color #2EA7E0
+		
+	.dash-category-secondary:before
+		content ''
+		color #2EA7E0

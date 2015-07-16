@@ -750,6 +750,118 @@ td {
 .page-course th {
   background-color: #efefef;
 }
+.dashboard {
+  background: #efefef;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+}
+.dashboard .banner {
+  background: #58819e;
+  width: 100%;
+  height: 70px;
+  color: #fff;
+}
+.dashboard .banner i,
+.dashboard .banner div {
+  height: 70px;
+  line-height: 70px;
+  float: left;
+  text-align: center;
+  padding: 0 15px 0 15px;
+}
+.dashboard .banner i {
+  font-size: 2em;
+}
+.dashboard .banner div {
+  font-size: 1.4em;
+}
+.dashboard .banner p,
+.dashboard .banner button {
+  height: 70px;
+  float: right;
+  line-height: 70px;
+  text-align: center;
+  color: #fff;
+  margin: 0;
+  padding: 0 10px 0 10px;
+}
+.dashboard #logout-bu {
+  background: transparent;
+  border: 0;
+}
+.dashboard #container {
+  height: 100%;
+  width: 100%;
+}
+.dashboard #panel {
+  background: #3e3a39;
+  height: 100%;
+  min-width: 200px;
+  width: 20%;
+  float: left;
+}
+.dashboard #wrapper {
+  width: 80%;
+  min-width: 800px;
+  height: 100%;
+  float: left;
+}
+.dashboard #title {
+  background: transparent;
+  height: 100px;
+  width: 100%;
+}
+.dashboard #content {
+  background: #fff;
+  height: 100%;
+  width: 100%;
+}
+.dashboard .dash-box-categories-container {
+  font-size: 1.05em;
+  line-height: 35px;
+  -webkit-transition: height 0.2s linear;
+          transition: height 0.2s linear;
+}
+.dashboard .box-category {
+  margin: 5px 0;
+  cursor: pointer;
+}
+.dashboard .dash-category-title {
+  color: #eee;
+  font-size: 1.1em;
+  cursor: pointer;
+  padding-left: 10px;
+  -webkit-transition: background 0.2s linear, color 0.2s linear;
+          transition: background 0.2s linear, color 0.2s linear;
+}
+.dashboard .dash-category-secondary-box {
+  padding-left: 0;
+}
+.dashboard .dash-category-secondary {
+  padding-left: 65px;
+  border-left: 5px;
+  border-left-style: outset;
+  border-left-color: transparent;
+  color: #aaa;
+  font-size: 1.1em;
+  cursor: pointer;
+  -webkit-transition: background 0.2s linear, color 0.2s linear;
+          transition: background 0.2s linear, color 0.2s linear;
+}
+.dashboard .dash-category-title:hover {
+  color: #eee;
+  background: #506885;
+}
+.dashboard .dash-category-secondary:hover {
+  color: #eee;
+  background: #506885;
+  border-left-color: #2ea7e0;
+}
+.dashboard .dash-category-secondary:before {
+  content: '';
+  color: #2ea7e0;
+}
 .news-footer {
   display: block;
   width: 100%;
@@ -1562,7 +1674,11 @@ td {
   width: 562px;
   height: 300px;
 }
+<<<<<<< HEAD
+.page-personaltraining .content-wrap .directIntro table {
+=======
 .page-personaltraining table {
+>>>>>>> caeefcaf0fe46b5b70b82cade3e02114df0946d4
   margin-top: 40px;
   line-height: 50px;
   color: #444;
@@ -1570,6 +1686,9 @@ td {
   text-align: left;
   width: 100%;
 }
+<<<<<<< HEAD
+.page-personaltraining .content-wrap .directIntro th {
+=======
 .page-personaltraining th {
   background-color: #efefef;
 }
@@ -1634,6 +1753,7 @@ td {
 .page-recruit .content-wrap .pic {
   min-height: 300px;
   width: 413px;
+>>>>>>> caeefcaf0fe46b5b70b82cade3e02114df0946d4
   background-color: #efefef;
   display: inline-block;
 }
@@ -1698,17 +1818,38 @@ td {
   text-align: left;
   width: 100%;
 }
+<<<<<<< HEAD
+.page-personaltraining .content-wrap .directIntro p {
+  line-height: 40px;
+  font-size: 1.2em;
+  color: #444;
+}
+.page-personaltraining .content-wrap table {
+  margin-top: 40px;
+  line-height: 50px;
+  color: #444;
+  font-size: 1.2em;
+  text-align: left;
+  width: 100%;
+}
+.page-personaltraining .content-wrap th {
+=======
 .page-recruit table td {
   padding-left: 10px;
   width: 155px;
 }
 .page-recruit table th {
+>>>>>>> caeefcaf0fe46b5b70b82cade3e02114df0946d4
   background-color: #efefef;
   text-align: center;
   line-height: 40px;
   padding: auto;
 }
+<<<<<<< HEAD
+.page-personaltraining .content-wrap p {
+=======
 .page-recruit p {
+>>>>>>> caeefcaf0fe46b5b70b82cade3e02114df0946d4
   line-height: 40px;
   font-size: 1.2em;
   color: #444;
@@ -1907,10 +2048,14 @@ td {
 .sub {
   background: #efefef;
   overflow: hidden;
+<<<<<<< HEAD
+=======
 }
 .sub html,
 .sub body {
+>>>>>>> caeefcaf0fe46b5b70b82cade3e02114df0946d4
   height: 100%;
+  width: 100%;
 }
 .sub header,
 .sub form,
