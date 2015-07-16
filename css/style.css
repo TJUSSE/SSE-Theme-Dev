@@ -782,13 +782,21 @@ td {
   float: right;
   line-height: 70px;
   text-align: center;
+  font-size: 1.2em;
   color: #fff;
   margin: 0;
-  padding: 0 10px 0 10px;
+  padding: 0 25px 0 25px;
 }
 .dashboard #logout-bu {
   background: transparent;
   border: 0;
+  border-bottom: 5px;
+  border-bottom-style: outset;
+  border-bottom-color: transparent;
+}
+.dashboard #logout-bu:hover {
+  background: #698ea8;
+  border-bottom-color: #6cbdde;
 }
 .dashboard #container {
   height: 100%;
@@ -809,13 +817,17 @@ td {
 }
 .dashboard #title {
   background: transparent;
-  height: 100px;
+  height: 60px;
   width: 100%;
+  margin-left: 20px;
+  padding: 20px;
+  color: #128bd7;
 }
 .dashboard #content {
   background: #fff;
   height: 100%;
   width: 100%;
+  padding: 20px;
 }
 .dashboard .dash-box-categories-container {
   font-size: 1.05em;
