@@ -552,6 +552,16 @@ td {
 .page-about .clear-inline {
   clear: both;
 }
+.page-academic p {
+  line-height: 40px;
+  font-size: 1.2em;
+  color: #444;
+}
+.page-academic a {
+  color: #444;
+  font-size: 1.2em;
+  text-decoration: none;
+}
 .page-academic .directory {
   height: 50px;
   font-size: 0.95em;
@@ -607,7 +617,7 @@ td {
   width: 620px;
   display: inline-block;
 }
-table {
+.page-academic table {
   margin-top: 40px;
   line-height: 50px;
   color: #444;
@@ -615,21 +625,21 @@ table {
   text-align: left;
   width: 100%;
 }
-table td {
+.page-academic table td {
   padding-left: 10px;
 }
-table th {
+.page-academic table th {
   background-color: #efefef;
   text-align: center;
   line-height: 40px;
   padding: auto;
 }
-p {
+.page-academic p {
   line-height: 40px;
   font-size: 1.2em;
   color: #444;
 }
-a {
+.page-academic a {
   color: #444;
   font-size: 1.2em;
   text-decoration: none;
@@ -1103,7 +1113,8 @@ a {
 }
 .page-infolist .info-list-left {
   float: left;
-  width: 900px;
+  width: 850px;
+  min-height: 521px;
 }
 .page-infolist .info-list-right {
   width: 300px;
@@ -1111,17 +1122,50 @@ a {
   margin-right: 50px;
 }
 .page-infolist .info-row {
-  height: 2em;
-  line-height: 2em;
-  width: 950px;
+  height: 2.5em;
+  line-height: 2.5em;
+  width: 850px;
   vertical-align: center;
   margin: auto 0;
+  cursor: pointer;
+  border-radius: 4px;
+  -webkit-transition: all linear 0.2s;
+          transition: all linear 0.2s;
+  padding: 0 10px;
+}
+.page-infolist .info-row:hover {
+  background: #d3d3d3;
 }
 .page-infolist .info-date {
   color: #5996c5;
 }
 .page-infolist .info-title {
   margin-left: 25px;
+}
+.page-infolist .change-page-container {
+  margin-bottom: 15px;
+  width: 750px;
+  text-align: center;
+}
+.page-infolist .change-page-btn {
+  outline: none;
+  background: none;
+  border: none;
+}
+.page-infolist .current-page {
+  color: #2267d9;
+  font-weight: bold;
+}
+.page-infolist .info-deadline {
+  float: right;
+/*background red*/
+/*color white*/
+  border-radius: 4px;
+  width: 180px;
+  text-align: center;
+}
+.page-infolist .info-deadline:before {
+  content: "到期时间：";
 }
 .info-list-sidebar {
   width: 250px;
@@ -1131,32 +1175,40 @@ a {
   border-color: #a9a9a9;
 }
 .box-search {
-  margin: auto;
   width: 100%;
   display: block;
   height: 2.4em;
-  text-align: center;
+  text-align: left;
   line-height: 2.4em;
+  vertical-align: center;
+  margin: auto 0;
 }
 .info-sidebar-search-input {
   border: none;
-  width: 85%;
-  font-size: 1.1em;
-  height: 1.4em;
+  float: left;
+  width: 215px;
+  font-size: 1.15em;
+  height: 80%;
   border-bottom: solid 1px;
   border-color: #a9a9a9;
   background: none;
   outline: none;
   color: #696969;
+  line-height: 1.15em;
 }
 .info-sidebar-search-btn {
-  width: 15%;
+  width: 25px;
+  height: 80%;
+  float: left;
+  display: inline-block;
   border: none;
   background: none;
   outline: none;
   font-size: 1.3em;
   color: #696969;
   text-align: center;
+  margin-left: 5px;
+  line-height: 1.35em;
 }
 .btn-subscribe {
   display: block;
@@ -1212,6 +1264,111 @@ a {
   background: #a9a9a9;
   color: #fff;
 }
+.page-internship .directory {
+  height: 50px;
+  font-size: 0.95em;
+  line-height: 50px;
+  color: #696969;
+}
+.page-internship .internship-container {
+  padding-top: 0px;
+  min-height: 559px;
+  width: 100%;
+}
+.page-internship .content-wrap {
+  position: relative;
+  margin: 0 auto;
+  width: 1250px;
+  height: auto;
+}
+.page-internship .content-wrap .largepic {
+  width: 1250px;
+  height: 440px;
+  background-color: #efefef;
+}
+.page-internship .content-wrap .internship-title {
+  margin-top: 50px;
+  height: 1px;
+  background: #d3d3d3;
+  text-align: center;
+}
+.page-internship .content-wrap .internship-title span {
+  background: #fff;
+  position: relative;
+  top: -0.7em;
+  color: #036eb8;
+  font-size: 1.4em;
+  padding: 0 10px;
+}
+.page-internship .content-wrap .divide {
+  vertical-align: top;
+  width: 620px;
+  display: inline-block;
+}
+.page-internship .content-wrap .pic-container {
+  width: 1250px;
+  margin-top: 20px;
+}
+.page-internship .content-wrap .pic {
+  min-height: 300px;
+  width: 413px;
+  background-color: #efefef;
+  display: inline-block;
+}
+.page-internship .content-wrap .directIntro {
+  width: 1250;
+  margin-top: 30px;
+}
+.page-internship .content-wrap .one-third {
+  vertical-align: top;
+  padding: 5px 30px;
+  width: 350px;
+  display: inline-block;
+}
+.page-internship .content-wrap .one-third img {
+  width: 350px;
+  height: 300px;
+}
+.page-internship .content-wrap .one-third a {
+  text-decoration: none;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #444;
+  margin-top: 10px;
+  margin-left: 80px;
+  float: left;
+}
+.page-internship table {
+  margin-top: 40px;
+  line-height: 50px;
+  color: #444;
+  font-size: 1.2em;
+  text-align: left;
+  width: 100%;
+}
+.page-internship table td {
+  padding-left: 10px;
+  width: 155px;
+}
+.page-internship table th {
+  background-color: #efefef;
+  text-align: center;
+  line-height: 40px;
+  padding: auto;
+}
+.page-internship p {
+  line-height: 40px;
+  font-size: 1.2em;
+  color: #444;
+}
+.page-internship a {
+  margin: 15px;
+  text-decoration: none;
+  color: #444;
+  font-size: 1.2em;
+  font-weight: bold;
+  float: right;
+}
 .navigator {
   z-index: 1;
   margin-top: 0px;
@@ -1222,6 +1379,7 @@ a {
   min-width: 1250px;
 }
 .blue-bar {
+  height: 10px;
   width: 100%;
 }
 .tj-logo {
@@ -1453,13 +1611,13 @@ a {
   max-width: 1250px;
   height: auto;
 }
-.page-personaltraining .content-wrap .traning-title {
+.page-personaltraining .traning-title {
   margin-top: 50px;
   height: 1px;
   background: #d3d3d3;
   text-align: center;
 }
-.page-personaltraining .content-wrap .traning-title span {
+.page-personaltraining span {
   background: #fff;
   position: relative;
   top: -0.7em;
@@ -1467,12 +1625,12 @@ a {
   font-size: 1.4em;
   padding: 0 10px;
 }
-.page-personaltraining .content-wrap .largepic {
+.page-personaltraining .largepic {
   width: 1250px;
   height: 440px;
   background-color: #efefef;
 }
-.page-personaltraining .content-wrap .destination {
+.page-personaltraining .destination {
   vertical-align: top;
   text-align: center;
   padding: 10px 14px;
@@ -1480,30 +1638,33 @@ a {
   width: 280px;
   display: inline-block;
 }
-.page-personaltraining .content-wrap .destination #circlepic,
-.page-personaltraining .content-wrap .destination img {
+.page-personaltraining #circlepic img {
   margin: auto;
   border-radius: 50%;
   width: 200px;
   height: 200px;
 }
-.page-personaltraining .content-wrap .directIntro {
+.page-personaltraining .directIntro {
   min-height: 500px;
   width: 1250;
   margin-top: 50px;
 }
-.page-personaltraining .content-wrap .directIntro .direct {
+.page-personaltraining .direct {
   vertical-align: top;
   padding: 30px;
   min-height: 500px;
   width: 562px;
   display: inline-block;
 }
-.page-personaltraining .content-wrap .directIntro img {
+.page-personaltraining img {
   width: 562px;
   height: 300px;
 }
+<<<<<<< HEAD
 .page-personaltraining .content-wrap .directIntro table {
+=======
+.page-personaltraining table {
+>>>>>>> caeefcaf0fe46b5b70b82cade3e02114df0946d4
   margin-top: 40px;
   line-height: 50px;
   color: #444;
@@ -1511,9 +1672,139 @@ a {
   text-align: left;
   width: 100%;
 }
+<<<<<<< HEAD
 .page-personaltraining .content-wrap .directIntro th {
+=======
+.page-personaltraining th {
   background-color: #efefef;
 }
+.page-personaltraining p {
+  line-height: 40px;
+  font-size: 1.2em;
+  color: #444;
+}
+.page-recruit .directory {
+  height: 50px;
+  font-size: 0.95em;
+  line-height: 50px;
+  color: #696969;
+}
+.page-recruit .recruit-container {
+  padding-top: 0;
+  min-height: 559px;
+  width: 100%;
+}
+.page-recruit .content-wrap {
+  position: relative;
+  margin: 0 auto;
+  width: 1250px;
+  height: auto;
+}
+.page-recruit .content-wrap .largepic img {
+  width: 1250px;
+  height: 440px;
+  background-color: #efefef;
+}
+.page-recruit .content-wrap .recruit-title {
+  margin-top: 50px;
+  height: 1px;
+  background: #d3d3d3;
+  text-align: center;
+}
+.page-recruit .content-wrap .recruit-title span {
+  background: #fff;
+  position: relative;
+  top: -0.7em;
+  color: #036eb8;
+  font-size: 1.4em;
+  padding: 0 10px;
+}
+.page-recruit .content-wrap .ul-block {
+  width: 1250px;
+  margin-top: 30px;
+}
+.page-recruit .content-wrap .ul-block ul {
+  line-height: 40px;
+}
+.page-recruit .content-wrap .ul-block ul li {
+  font-size: 1.2em;
+  font-weight: normal;
+  color: #444;
+  list-style-type: none;
+}
+.page-recruit .content-wrap .pic-container {
+  width: 1250px;
+  margin-top: 20px;
+}
+.page-recruit .content-wrap .pic {
+  min-height: 300px;
+  width: 413px;
+>>>>>>> caeefcaf0fe46b5b70b82cade3e02114df0946d4
+  background-color: #efefef;
+  display: inline-block;
+}
+.page-recruit .content-wrap .directIntro {
+  width: 1250;
+  margin-top: 30px;
+}
+.page-recruit .content-wrap .one-half {
+  vertical-align: top;
+  width: 620px;
+  display: inline-block;
+}
+.page-recruit .content-wrap .one-third {
+  vertical-align: top;
+  padding: 5px 30px;
+  width: 350px;
+  display: inline-block;
+}
+.page-recruit .content-wrap .one-third img {
+  width: 350px;
+  height: 300px;
+}
+.page-recruit .content-wrap .one-third a {
+  text-decoration: none;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #444;
+  margin-top: 10px;
+  margin-left: 80px;
+  float: left;
+}
+.page-recruit .content-wrap .pic-block-left {
+  padding: 10px;
+  margin-top: 20px;
+  display: inline-block;
+  float: left;
+}
+.page-recruit .content-wrap .pic-block-left img {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+.page-recruit .content-wrap .pic-block-right {
+  padding: 10px;
+  margin-top: 20px;
+  display: inline-block;
+  float: right;
+}
+.page-recruit .content-wrap .pic-block-right img {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+.page-recruit .content-wrap #connect {
+  margin-left: 200px;
+}
+.page-recruit table {
+  margin-top: 40px;
+  line-height: 50px;
+  color: #444;
+  font-size: 1.2em;
+  text-align: left;
+  width: 100%;
+}
+<<<<<<< HEAD
 .page-personaltraining .content-wrap .directIntro p {
   line-height: 40px;
   font-size: 1.2em;
@@ -1528,12 +1819,40 @@ a {
   width: 100%;
 }
 .page-personaltraining .content-wrap th {
-  background-color: #efefef;
+=======
+.page-recruit table td {
+  padding-left: 10px;
+  width: 155px;
 }
+.page-recruit table th {
+>>>>>>> caeefcaf0fe46b5b70b82cade3e02114df0946d4
+  background-color: #efefef;
+  text-align: center;
+  line-height: 40px;
+  padding: auto;
+}
+<<<<<<< HEAD
 .page-personaltraining .content-wrap p {
+=======
+.page-recruit p {
+>>>>>>> caeefcaf0fe46b5b70b82cade3e02114df0946d4
   line-height: 40px;
   font-size: 1.2em;
   color: #444;
+}
+.page-recruit a {
+  margin: 15px;
+  text-decoration: none;
+  color: #444;
+  font-size: 1.2em;
+  font-weight: bold;
+  float: right;
+}
+.page-recruit h2 {
+  font-size: 1.4em;
+  text-align: center;
+  margin: 5px;
+  padding: 3px;
 }
 .side-bar-selection {
   position: absolute;
@@ -1715,6 +2034,12 @@ a {
 .sub {
   background: #efefef;
   overflow: hidden;
+<<<<<<< HEAD
+=======
+}
+.sub html,
+.sub body {
+>>>>>>> caeefcaf0fe46b5b70b82cade3e02114df0946d4
   height: 100%;
   width: 100%;
 }
@@ -1915,6 +2240,92 @@ a {
 }
 .sub .opaque {
   opacity: 0.3;
+}
+.page-teacher-content .teacher-content-container {
+  display: block;
+  width: 100%;
+}
+.page-teacher-content .teacher-content-left {
+  display: block;
+  width: 65%;
+  float: left;
+}
+.page-teacher-content .teacher-content-right {
+  display: block;
+  width: 30%;
+  float: right;
+}
+.page-teacher-content .teacher-intro-primary {
+  display: block;
+  padding: 30px;
+  float: left;
+  width: 100%;
+}
+.page-teacher-content .teacher-intro-primary-right {
+  display: inline-block;
+  float: left;
+  width: 400px;
+  margin-left: 57px;
+}
+.page-teacher-content .teacher-photo {
+  display: inline-block;
+  float: left;
+}
+.page-teacher-content .teacher-intro-primary-row {
+  display: block;
+  margin: 15px auto;
+  width: 100%;
+  color: #444;
+}
+.page-teacher-content .teacher-name {
+  font-size: 1.8em;
+}
+.page-teacher-content .teacher-name-pinyin {
+  margin-left: 15px;
+  font-size: 1.5em;
+  color: #d3d3d3;
+}
+.page-teacher-content .teacher-job {
+  display: block;
+  font-size: 1.2em;
+}
+.page-teacher-content .teacher-contact {
+  font-size: 0.8em;
+}
+.page-teacher-content .about-brief {
+  width: 100%;
+  display: inline-block;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.page-teacher-content .about-title {
+  height: 2px;
+  background: #d3d3d3;
+  text-align: center;
+}
+.page-teacher-content .about-title span {
+  background: #fff;
+  position: relative;
+  top: -0.7em;
+  color: #036eb8;
+  font-size: 1.1em;
+  padding: 0 10px;
+}
+.page-teacher-content .about-content {
+  width: 100%;
+  margin-top: 17px;
+  margin-bottom: 17px;
+}
+.page-teacher-content .about-content p {
+  text-align: left;
+}
+.page-teacher-content .about-content ul,
+.page-teacher-content .about-content ol {
+  margin-left: 25px;
+}
+.page-teacher-content .about-content li {
+  text-align: left;
 }
 .page-teachers-list {
   display: block;
