@@ -868,7 +868,6 @@ td {
   content: '';
   color: #2ea7e0;
 }
-<<<<<<< HEAD
 .email {
   background: #fff;
   height: 100%;
@@ -925,7 +924,7 @@ td {
 }
 .email label {
   color: #b67f64;
-=======
+}
 .sub-enteremail {
   background: #efefef;
   overflow: hidden;
@@ -1278,7 +1277,6 @@ input[type=submit] {
 .dialog.dialog--open button {
   -webkit-animation: anim-elem-2 0.7s ease-out both;
   animation: anim-elem-2 0.7s ease-out both;
->>>>>>> b00042a580dca50638e4b17422b3d2dc261c3c69
 }
 .news-footer {
   display: block;
@@ -2097,6 +2095,10 @@ input[type=submit] {
   width: 562px;
   height: 300px;
 }
+.page-personaltraining img {
+  width: 562px;
+  height: 300px;
+}
 .page-personaltraining table {
   margin-top: 40px;
   line-height: 50px;
@@ -2461,10 +2463,6 @@ input[type=submit] {
 }
 .sub {
   background: #efefef;
-<<<<<<< HEAD
-=======
-  overflow: hidden;
->>>>>>> b00042a580dca50638e4b17422b3d2dc261c3c69
   height: 100%;
   width: 100%;
 }
@@ -2503,15 +2501,11 @@ input[type=submit] {
   position: relative;
   margin: 20px auto 150px auto;
   width: 600px;
-<<<<<<< HEAD
-=======
-  height: 420px;
->>>>>>> b00042a580dca50638e4b17422b3d2dc261c3c69
   background: #fff;
   background-image: url("../resources/subscribe_bg-01.png");
   background-repeat: no-repeat;
   background-position: 105% 105%;
-  padding: 50px 50px 80px 50px;
+  padding: 50px 50px 50px 50px;
   box-shadow: 0px 5px 20px #ccc;
 }
 .sub .center-box {
@@ -2531,6 +2525,7 @@ input[type=submit] {
 .sub .class-layer {
   margin-right: 10px;
   margin-buttom: 5px;
+  width: 100%;
 }
 .sub .sub-navigator {
   height: 200px;

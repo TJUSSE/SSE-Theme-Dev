@@ -17,7 +17,6 @@ $(document).ready ()->
 			, "json"
 
 	$('#unsub-bu').click ()->
-		window.open('unsub.html', '_self', '')
 		$.post "", {'unsub':'unsub'},
 			(status)->
 				status = parseInt(status)
