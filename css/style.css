@@ -2135,6 +2135,10 @@ input[type=submit] {
   font-size: 1.2em;
   color: #444;
 }
+.page-personaltraining p line-height 40px {
+  font-size: 1.2em;
+  color: #444;
+}
 .page-recruit .directory {
   height: 50px;
   font-size: 0.95em;
@@ -2501,6 +2505,7 @@ input[type=submit] {
   position: relative;
   margin: 20px auto 150px auto;
   width: 600px;
+  height: 420px;
   background: #fff;
   background-image: url("../resources/subscribe_bg-01.png");
   background-repeat: no-repeat;
