@@ -21,12 +21,15 @@
 
   .nav-title
     color: #ffffff
-    line-height $nav-height
+    line-height $nav-height - 5px
     width 25%
     float left
     cursor pointer
     text-align center
     transition all .2s ease-out
+    a
+      color white
+
 
   .nav-title:hover
     background $background-black-darken
@@ -73,12 +76,16 @@
     margin-top 0px
     width 100%
     height 100%
-
+    a
+      display block
+      width 100%
+      height 35px
+      line-height 35px
+      transition all .2s linear;
 
   li
     overflow hidden
     padding-left 15px
-    line-height 28px
     font-size 1.05em
     line-height 35px
     height 35px
@@ -89,7 +96,7 @@
 
   li:hover
     background $background-black-darken
-    color $highlight-blue
+    color $highlight-blue !important
 
   .list-item-primary
     padding-left 15px
@@ -147,3 +154,21 @@
     margin-top 35px
     font-size 1.2em
     color rgba(255,255,255,0.9)
+
+  .blue-line
+    background $highlight-blue
+    /*text-align left*/
+    /*float left*/
+    width 0
+    height 5px!important
+    bottom 5px
+    transition all .2s ease-in-out
+
+  .blue-line-activated
+    width 100%
+
+  a
+    color white
+
+  li a:hover
+    color $highlight-blue

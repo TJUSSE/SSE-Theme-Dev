@@ -52,6 +52,9 @@ body {
 .clear {
   clear: both;
 }
+a {
+  text-decoration: none;
+}
 
 
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
@@ -1320,8 +1323,14 @@ td {
   font-size: 1.15em;
   line-height: 2.5em;
 }
+.footer-list-title a {
+  color: #fff;
+}
 .footer-list-item {
   line-height: 1.6em;
+}
+.footer-list-item a {
+  color: #d3d3d3;
 }
 .news-footer-author {
   margin-top: 30px;
@@ -1401,7 +1410,7 @@ td {
   left: 0px;
   top: 0px;
   width: 100%;
-  height: 50px;
+  height: 65px;
   background: rgba(0,0,0,0.52);
   min-width: 1250px;
 }
@@ -1413,7 +1422,7 @@ td {
 }
 .page-index .nav-title {
   color: #fff;
-  line-height: 50px;
+  line-height: 60px;
   width: 25%;
   float: left;
   cursor: pointer;
@@ -1421,13 +1430,16 @@ td {
   -webkit-transition: all 0.2s ease-out;
           transition: all 0.2s ease-out;
 }
+.page-index .nav-title a {
+  color: #fff;
+}
 .page-index .nav-title:hover {
   background: rgba(0,0,0,0.65);
 }
 .page-index .nav-lists-container {
   z-index: 3;
   position: absolute;
-  top: 50px;
+  top: 65px;
   bottom: 70px;
   left: 0;
   display: block;
@@ -1462,17 +1474,24 @@ td {
 }
 .page-index ul {
   overflow: hidden;
-  top: 50px;
-  bottom: 50px;
+  top: 65px;
+  bottom: 65px;
   left: 0px;
   margin-top: 0px;
   width: 100%;
   height: 100%;
 }
+.page-index ul a {
+  display: block;
+  width: 100%;
+  height: 35px;
+  line-height: 35px;
+  -webkit-transition: all 0.2s linear;
+          transition: all 0.2s linear;
+}
 .page-index li {
   overflow: hidden;
   padding-left: 15px;
-  line-height: 28px;
   font-size: 1.05em;
   line-height: 35px;
   height: 35px;
@@ -1484,7 +1503,7 @@ td {
 }
 .page-index li:hover {
   background: rgba(0,0,0,0.65);
-  color: #2267d9;
+  color: #2267d9 !important;
 }
 .page-index .list-item-primary {
   padding-left: 15px;
@@ -1544,6 +1563,25 @@ td {
   margin-top: 35px;
   font-size: 1.2em;
   color: rgba(255,255,255,0.9);
+}
+.page-index .blue-line {
+  background: #2267d9;
+/*text-align left*/
+/*float left*/
+  width: 0;
+  height: 5px !important;
+  bottom: 5px;
+  -webkit-transition: all 0.2s ease-in-out;
+          transition: all 0.2s ease-in-out;
+}
+.page-index .blue-line-activated {
+  width: 100%;
+}
+.page-index a {
+  color: #fff;
+}
+.page-index li a:hover {
+  color: #2267d9;
 }
 .info-content .info-deadline {
   display: block;
@@ -2119,10 +2157,6 @@ td {
   width: 562px;
   height: 300px;
 }
-.page-personaltraining img {
-  width: 562px;
-  height: 300px;
-}
 .page-personaltraining table {
   margin-top: 40px;
   line-height: 50px;
@@ -2136,30 +2170,6 @@ td {
 }
 .page-personaltraining p {
   line-height: 40px;
-  font-size: 1.2em;
-  color: #444;
-}
-.page-personaltraining table {
-  margin-top: 40px;
-  line-height: 50px;
-  color: #444;
-  font-size: 1.2em;
-  text-align: left;
-  width: 100%;
-}
-.page-personaltraining th {
-  background-color: #efefef;
-}
-.page-personaltraining p {
-  line-height: 40px;
-  font-size: 1.2em;
-}
-.page-personaltraining p color #444 {
-  line-height: 40px;
-  font-size: 1.2em;
-  color: #444;
-}
-.page-personaltraining p line-height 40px {
   font-size: 1.2em;
   color: #444;
 }
@@ -2425,14 +2435,23 @@ td {
 #slider .slide-imgs {
   display: inline-block;
 }
-#slider img {
+.slide {
+  -webkit-transition: all ease-in-out 0.4s;
+          transition: all ease-in-out 0.4s;
   z-index: 5;
+  width: 850px !important;
+  height: 340px !important;
+  background: url("../resources/schoolPhotos/sp0.jpg") center top no-repeat;
+  filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod='scale')";
+  background-size: 100%;
+  float: left;
+  display: inline-block;
+}
+.slide img {
   width: 850px !important;
   height: 340px !important;
   float: left;
   margin-left: 0;
-  -webkit-transition: all ease-in-out 1s;
-          transition: all ease-in-out 1s;
 }
 #next,
 #prev {
@@ -2461,7 +2480,7 @@ td {
   right: 0;
 }
 .move-left {
-  margin-left: -100% !important;
+  margin-left: -850px !important;
 }
 .move-right {
   margin-left: 100% !important;
@@ -2484,7 +2503,7 @@ td {
   outline: none;
   background: none;
   color: #fff;
-  text-shadow: 5px 5px 5px #d3d3d3;
+  text-shadow: 1px 1px 1px #d3d3d3;
 }
 .slide-dots .activated {
   color: #2267d9;

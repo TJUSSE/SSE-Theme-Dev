@@ -1,7 +1,7 @@
 $(document).ready ()->
   window.g = {}
 
-  window.g.imgList = $('#slider .slide-imgs img')
+  window.g.imgList = $('#slider .slide-imgs .slide')
   window.g.imgNum = window.g.imgList.length
   $('.slide-imgs').css('width', 100 * window.g.imgNum + '%')
 

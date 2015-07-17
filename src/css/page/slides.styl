@@ -28,13 +28,24 @@ $slide-width = 850px
   overflow hidden
   .slide-imgs
     display inline-block
+
+
+.slide
+  transition all ease-in-out 0.4s
+  z-index 5
+  width  $slide-width !important
+  height $slide-height !important
+  background url(../resources/schoolPhotos/sp0.jpg) center top no-repeat
+  filter "progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod='scale')"
+  background-size 100%
+  float left
+  display inline-block
   img
-    z-index 5
     width  $slide-width !important
     height $slide-height !important
     float left
     margin-left 0
-    transition all ease-in-out 1s
+    // transition all ease-in-out 1s
 
 #next, #prev
   position absolute
@@ -60,7 +71,7 @@ $slide-width = 850px
   right 0
 
 .move-left
-  margin-left -100%!important
+  margin-left ($slide-width * (-1)) !important
 
 .move-right
   margin-left 100%!important
@@ -83,6 +94,7 @@ $slide-width = 850px
     outline none
     background none
     color white
-    text-shadow: 5px 5px 5px lightgrey;
+    text-shadow: 1px 1px 1px lightgrey;
+
   .activated
     color $highlight-blue
