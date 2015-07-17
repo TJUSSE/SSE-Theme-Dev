@@ -560,11 +560,6 @@ td {
   font-size: 1em;
   color: #444;
 }
-.page-academic a {
-  color: #444;
-  font-size: 1em;
-  text-decoration: none;
-}
 .page-academic .directory {
   height: 50px;
   font-size: 0.95em;
@@ -636,11 +631,6 @@ td {
   text-align: center;
   line-height: 40px;
   padding: auto;
-}
-.page-academic a {
-  color: #444;
-  font-size: 1em;
-  text-decoration: none;
 }
 .page-activity .directory {
   height: 50px;
@@ -1869,12 +1859,6 @@ td {
   font-size: 1.2em;
   color: #444;
 }
-.page-internship a {
-  text-decoration: none;
-  color: #444;
-  font-size: 1em;
-  float: right;
-}
 .navigator {
   z-index: 1;
   margin-top: 0px;
@@ -2327,13 +2311,6 @@ td {
   line-height: 40px;
   font-size: 1em;
   color: #444;
-}
-.page-recruit a {
-  margin: 15px;
-  text-decoration: none;
-  color: #444;
-  font-size: 1em;
-  float: right;
 }
 .page-recruit h2 {
   font-size: 1.4em;
