@@ -3,9 +3,9 @@ $(document).ready ()->
 		$('#sub-prompt').removeClass 'invi'
 		$('#sub-prompt').addClass 'front-div'
 		$('header, form, h1, h2, h3').addClass 'opaque'
-		post_data = { 'tag' : []};
+		post_data = { 'group[]' : [], 'type[]': []};
 		$(":checked").each ()->
-			post_data['tag'].push $(this).val()
+			post_data[this.name].push $(this).val()
 		console.log post_data
 		$.post "", post_data,
 			(status)->
