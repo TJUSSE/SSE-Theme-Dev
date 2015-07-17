@@ -1326,10 +1326,16 @@ td {
 .footer-list-title a {
   color: #fff;
 }
+.footer-list-title a:visited {
+  color: #fff;
+}
 .footer-list-item {
   line-height: 1.6em;
 }
 .footer-list-item a {
+  color: #d3d3d3;
+}
+.footer-list-item a:visited {
   color: #d3d3d3;
 }
 .news-footer-author {
