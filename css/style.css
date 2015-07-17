@@ -557,7 +557,7 @@ td {
 }
 .page-academic p {
   line-height: 40px;
-  font-size: 1.2em;
+  font-size: 1.05em;
   color: #444;
 }
 .page-academic a {
@@ -637,11 +637,6 @@ td {
   line-height: 40px;
   padding: auto;
 }
-.page-academic p {
-  line-height: 40px;
-  font-size: 1.2em;
-  color: #444;
-}
 .page-academic a {
   color: #444;
   font-size: 1.2em;
@@ -717,7 +712,7 @@ td {
 }
 .page-activity p {
   line-height: 40px;
-  font-size: 1.2em;
+  font-size: 1.05em;
   color: #444;
 }
 .page-course .directory {
@@ -1394,18 +1389,17 @@ td {
   text-align: left;
   width: 100%;
 }
-.page-fund table td {
+.page-fund td {
   padding-left: 10px;
 }
-.page-fund table th {
+.page-fund th {
   background-color: #efefef;
   text-align: center;
   line-height: 40px;
-  padding: auto;
 }
 .page-fund p {
   line-height: 40px;
-  font-size: 1.2em;
+  font-size: 1.05em;
   color: #444;
 }
 .page-index {
@@ -2311,7 +2305,7 @@ td {
 }
 .page-recruit p {
   line-height: 40px;
-  font-size: 1.2em;
+  font-size: 1.05em;
   color: #444;
 }
 .page-recruit a {
@@ -2554,12 +2548,11 @@ td {
   position: relative;
   margin: 20px auto 150px auto;
   width: 600px;
-  height: 420px;
   background: #fff;
   background-image: url("../resources/subscribe_bg-01.png");
   background-repeat: no-repeat;
   background-position: 105% 105%;
-  padding: 50px 50px 50px 50px;
+  padding: 50px 50px 80px 50px;
   box-shadow: 0px 5px 20px #ccc;
 }
 .sub .center-box {
