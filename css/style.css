@@ -557,7 +557,7 @@ td {
 }
 .page-academic p {
   line-height: 40px;
-  font-size: 1.2em;
+  font-size: 1.05em;
   color: #444;
 }
 .page-academic a {
@@ -712,7 +712,7 @@ td {
 }
 .page-activity p {
   line-height: 40px;
-  font-size: 1.2em;
+  font-size: 1.05em;
   color: #444;
 }
 .page-course .directory {
@@ -1383,18 +1383,17 @@ td {
   text-align: left;
   width: 100%;
 }
-.page-fund table td {
+.page-fund td {
   padding-left: 10px;
 }
-.page-fund table th {
+.page-fund th {
   background-color: #efefef;
   text-align: center;
   line-height: 40px;
-  padding: auto;
 }
 .page-fund p {
   line-height: 40px;
-  font-size: 1.2em;
+  font-size: 1.05em;
   color: #444;
 }
 .page-index {
@@ -2300,7 +2299,7 @@ td {
 }
 .page-recruit p {
   line-height: 40px;
-  font-size: 1.2em;
+  font-size: 1.05em;
   color: #444;
 }
 .page-recruit a {
