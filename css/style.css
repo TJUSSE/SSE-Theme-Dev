@@ -527,7 +527,7 @@ td {
 }
 .page-about .about-text p {
   margin-top: 0;
-  font-size: 1.05em !important;
+  font-size: 1em !important;
   line-height: 1.65em !important;
 }
 .page-about .about-text ul {
@@ -557,7 +557,7 @@ td {
 }
 .page-academic p {
   line-height: 40px;
-  font-size: 1.05em;
+  font-size: 1em;
   color: #444;
 }
 .page-academic a {
@@ -712,7 +712,7 @@ td {
 }
 .page-activity p {
   line-height: 40px;
-  font-size: 1.05em;
+  font-size: 1em;
   color: #444;
 }
 .page-course .directory {
@@ -741,7 +741,7 @@ td {
   margin-top: 40px;
   line-height: 50px;
   color: #444;
-  font-size: 1.2em;
+  font-size: 1em;
   text-align: left;
   width: 100%;
 }
@@ -1337,7 +1337,7 @@ td {
   margin-top: 30px;
   line-height: 50px;
   height: 50px;
-  font-size: 1.05em;
+  font-size: 1em;
   color: #fff;
 }
 .page-fund .directory {
@@ -1385,7 +1385,7 @@ td {
   margin-top: 40px;
   line-height: 50px;
   color: #444;
-  font-size: 1.2em;
+  font-size: 1.05em;
   text-align: left;
   width: 100%;
 }
@@ -1399,7 +1399,7 @@ td {
 }
 .page-fund p {
   line-height: 40px;
-  font-size: 1.05em;
+  font-size: 1em;
   color: #444;
 }
 .page-index {
@@ -1867,7 +1867,7 @@ td {
 }
 .page-internship p {
   line-height: 40px;
-  font-size: 1.2em;
+  font-size: 1em;
   color: #444;
 }
 .page-internship a {
@@ -2193,7 +2193,7 @@ td {
 }
 .page-personaltraining p {
   line-height: 40px;
-  font-size: 1.2em;
+  font-size: 1em;
   color: #444;
 }
 .page-recruit .directory {
@@ -2240,7 +2240,7 @@ td {
   line-height: 40px;
 }
 .page-recruit .content-wrap .ul-block ul li {
-  font-size: 1.2em;
+  font-size: 1em;
   font-weight: normal;
   color: #444;
   list-style-type: none;
@@ -2328,7 +2328,7 @@ td {
 }
 .page-recruit p {
   line-height: 40px;
-  font-size: 1.05em;
+  font-size: 1em;
   color: #444;
 }
 .page-recruit a {
