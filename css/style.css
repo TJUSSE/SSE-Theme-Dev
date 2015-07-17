@@ -1625,11 +1625,17 @@ td {
           transition: all linear 0.2s;
   padding-left: 10px;
 }
+.page-infolist .info-row a {
+  color: #000;
+}
+.page-infolist .info-row a:visited {
+  color: #000;
+}
 .page-infolist .info-row:hover {
   background: #d3d3d3;
 }
 .page-infolist .info-date {
-  color: #5996c5;
+  color: #5996c5 !important;
 }
 .page-infolist .info-title {
   margin-left: 15px;
@@ -1663,7 +1669,7 @@ td {
   width: 250px;
   padding: 25px;
   background: #efefef;
-  color: #696969;
+  color: #696969 !important;
   border-color: #a9a9a9;
 }
 .box-search {
@@ -1697,10 +1703,13 @@ td {
   background: none;
   outline: none;
   font-size: 1.3em;
-  color: #696969;
+  color: #696969 !important;
   text-align: center;
   margin-left: 5px;
   line-height: 1.35em;
+}
+.info-sidebar-search-btn a:visited {
+  color: #696969 !important;
 }
 .btn-subscribe {
   display: block;
@@ -1719,7 +1728,6 @@ td {
   padding-right: 15px;
   background: none;
 }
-.btn-subscribe,
 .box-categories-container {
   margin: 10px 0;
   font-size: 1.05em;
@@ -1739,9 +1747,12 @@ td {
           transition: background 0.2s linear, color 0.2s linear;
   border-radius: 4px;
 }
+.category-title a:visited {
+  color: #444 !important;
+}
 .category-title:hover {
   background: #a9a9a9;
-  color: #fff;
+  color: #fff !important;
 }
 .category-secondary-box {
   padding-left: 0;
@@ -1752,9 +1763,15 @@ td {
   -webkit-transition: background 0.2s linear, color 0.2s linear;
           transition: background 0.2s linear, color 0.2s linear;
 }
+.category-secondary a:visited {
+  color: #696969 !important;
+}
 .category-secondary:hover {
   background: #a9a9a9;
-  color: #fff;
+  color: #fff !important;
+}
+.category-secondary:hover a:visited {
+  color: #fff !important;
 }
 .page-internship .directory {
   height: 50px;
@@ -2012,6 +2029,12 @@ td {
 .page-news .news-abstract-title {
   font-size: 1.2em;
   line-height: 1.5em;
+}
+.page-news .news-abstract-title a {
+  color: #000;
+}
+.page-news .news-abstract-title a:visited {
+  color: #000;
 }
 .page-news .news-abstract {
   color: #696969;
