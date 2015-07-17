@@ -4,9 +4,70 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>邮件订阅</title>
-	<link rel="stylesheet" href="css/style.css">
-	<!--<link rel="stylesheet" type="text/css" href="http://netdna.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">-->
-	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<style type="text/css">
+html, body{
+	height: 100%;
+	padding: 0;
+	margin: 0;
+}
+.email {
+  background: #fff;
+  height: 100%;
+  width: 100%;
+  -webkit-transition: all 1s cubic-bezier(0.215, 0.61, 0.355, 1);
+          transition: all 1s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.email h1,
+.email h2,
+.email h3 {
+  font-weight: 200;
+}
+.email header {
+  color: #999;
+  padding: 0 20px 0 20px;
+}
+.email h1 {
+  font-size: 1.5em;
+  margin: 20px 0 5px 0;
+}
+.email .email-container {
+  height: 80%;
+  padding: 0 20px 0 20px;
+}
+.email h2 {
+  font-size: 1.5em;
+  margin: 20px 0 5px 0;
+}
+.email h3 {
+  color: #aaa;
+  padding: 0 30px 0 30px;
+  margin: 0 0 15px 0;
+}
+.email .content,
+.email .email-container a {
+  padding: 0 30px 0 30px;
+  margin: 15px 0 15px 0;
+}
+.email .content div {
+  color: #000;
+}
+.email .email-footer {
+  line-height: 20px;
+  height: 40px;
+  font-size: 0.8em;
+  background: #efefef;
+  color: #999;
+  padding: 30px 30px 30px 30px;
+}
+.email a {
+  color: #0a95f2;
+  text-decoration: none;
+  margin: 10px 0 10px 0;
+}
+.email label {
+  color: #b67f64;
+}
+	</style>
 	<script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
 	<script src="js/page/sub.js" type="text/javascript" charset="utf-8"></script>
 </head>

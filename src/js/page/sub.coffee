@@ -4,7 +4,7 @@ $(document).ready ()->
 		$('#sub-prompt').addClass 'front-div'
 		$('header, form, h1, h2, h3').addClass 'opaque'
 		post_data = { 'group[]' : [], 'type[]': []};
-		$(":checked").each ()->
+		$(".sub-form input[type=checkbox]:checked").each ()->
 			post_data[this.name].push $(this).val()
 		console.log post_data
 		$.post "", post_data,

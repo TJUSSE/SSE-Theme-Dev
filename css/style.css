@@ -1850,7 +1850,7 @@ td {
 }
 .page-internship p {
   line-height: 40px;
-  font-size: 1em;
+  font-size: 1.2em;
   color: #444;
 }
 .page-internship a {
@@ -2184,24 +2184,24 @@ td {
   min-height: 559px;
   width: 100%;
 }
-.page-recruit .content-wrap {
+.page-recruit .content-wrapper {
   position: relative;
   margin: 0 auto;
   width: 1250px;
   height: auto;
 }
-.page-recruit .content-wrap .largepic img {
+.page-recruit .content-wrapper .largepic img {
   width: 1250px;
   height: 440px;
   background-color: #efefef;
 }
-.page-recruit .content-wrap .recruit-title {
+.page-recruit .content-wrapper .recruit-title {
   margin-top: 50px;
   height: 1px;
   background: #d3d3d3;
   text-align: center;
 }
-.page-recruit .content-wrap .recruit-title span {
+.page-recruit .content-wrapper .recruit-title span {
   background: #fff;
   position: relative;
   top: -0.7em;
@@ -2209,49 +2209,49 @@ td {
   font-size: 1.4em;
   padding: 0 10px;
 }
-.page-recruit .content-wrap .ul-block {
+.page-recruit .content-wrapper .ul-block {
   width: 1250px;
   margin-top: 30px;
 }
-.page-recruit .content-wrap .ul-block ul {
+.page-recruit .content-wrapper .ul-block ul {
   line-height: 40px;
 }
-.page-recruit .content-wrap .ul-block ul li {
-  font-size: 1em;
+.page-recruit .content-wrapper .ul-block ul li {
+  font-size: 1.2em;
   font-weight: normal;
   color: #444;
   list-style-type: none;
 }
-.page-recruit .content-wrap .pic-container {
+.page-recruit .content-wrapper .pic-container {
   width: 1250px;
   margin-top: 20px;
 }
-.page-recruit .content-wrap .pic {
+.page-recruit .content-wrapper .pic {
   min-height: 300px;
   width: 413px;
   background-color: #efefef;
   display: inline-block;
 }
-.page-recruit .content-wrap .directIntro {
+.page-recruit .content-wrapper .directIntro {
   width: 1250;
   margin-top: 30px;
 }
-.page-recruit .content-wrap .one-half {
+.page-recruit .content-wrapper .one-half {
   vertical-align: top;
   width: 620px;
   display: inline-block;
 }
-.page-recruit .content-wrap .one-third {
+.page-recruit .content-wrapper .one-third {
   vertical-align: top;
   padding: 5px 30px;
   width: 350px;
   display: inline-block;
 }
-.page-recruit .content-wrap .one-third img {
+.page-recruit .content-wrapper .one-third img {
   width: 350px;
   height: 300px;
 }
-.page-recruit .content-wrap .one-third a {
+.page-recruit .content-wrapper .one-third a {
   text-decoration: none;
   font-size: 1.2em;
   font-weight: bold;
@@ -2260,29 +2260,29 @@ td {
   margin-left: 80px;
   float: left;
 }
-.page-recruit .content-wrap .pic-block-left {
+.page-recruit .content-wrapper .pic-block-left {
   padding: 10px;
   margin-top: 20px;
   display: inline-block;
   float: left;
 }
-.page-recruit .content-wrap .pic-block-left img {
+.page-recruit .content-wrapper .pic-block-left img {
   border-radius: 50%;
   width: 200px;
   height: 200px;
 }
-.page-recruit .content-wrap .pic-block-right {
+.page-recruit .content-wrapper .pic-block-right {
   padding: 10px;
   margin-top: 20px;
   display: inline-block;
   float: right;
 }
-.page-recruit .content-wrap .pic-block-right img {
+.page-recruit .content-wrapper .pic-block-right img {
   border-radius: 50%;
   width: 200px;
   height: 200px;
 }
-.page-recruit .content-wrap #connect {
+.page-recruit .content-wrapper #connect {
   margin-left: 200px;
 }
 .page-recruit table {
@@ -2307,14 +2307,6 @@ td {
   line-height: 40px;
   font-size: 1em;
   color: #444;
-}
-.page-recruit a {
-  margin: 15px;
-  text-decoration: none;
-  color: #444;
-  font-size: 1.2em;
-  font-weight: bold;
-  float: right;
 }
 .page-recruit h2 {
   font-size: 1.4em;
