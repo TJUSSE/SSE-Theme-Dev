@@ -562,7 +562,7 @@ td {
 }
 .page-academic a {
   color: #444;
-  font-size: 1.2em;
+  font-size: 1em;
   text-decoration: none;
 }
 .page-academic .directory {
@@ -576,18 +576,18 @@ td {
   min-height: 559px;
   width: 100%;
 }
-.page-academic .content-wrap {
+.page-academic .content-wrapper {
   position: relative;
   margin: 0 auto;
   width: 1250px;
   height: auto;
 }
-.page-academic .content-wrap .largepic {
+.page-academic .content-wrapper .largepic {
   width: 1250px;
   height: 440px;
   background-color: #efefef;
 }
-.page-academic .content-wrap .destination {
+.page-academic .content-wrapper .destination {
   vertical-align: top;
   text-align: center;
   padding: 10px 14px;
@@ -595,7 +595,7 @@ td {
   width: 280px;
   display: inline-block;
 }
-.page-academic .content-wrap #circlepic img {
+.page-academic .content-wrapper #circlepic img {
   margin: auto;
   border-radius: 50%;
   width: 200px;
@@ -639,7 +639,7 @@ td {
 }
 .page-academic a {
   color: #444;
-  font-size: 1.2em;
+  font-size: 1em;
   text-decoration: none;
 }
 .page-activity .directory {
@@ -1784,24 +1784,24 @@ td {
   min-height: 559px;
   width: 100%;
 }
-.page-internship .content-wrap {
+.page-internship .content-wrapper {
   position: relative;
   margin: 0 auto;
   width: 1250px;
   height: auto;
 }
-.page-internship .content-wrap .largepic {
+.page-internship .content-wrapper .largepic {
   width: 1250px;
   height: 440px;
   background-color: #efefef;
 }
-.page-internship .content-wrap .internship-title {
+.page-internship .content-wrapper .internship-title {
   margin-top: 50px;
   height: 1px;
   background: #d3d3d3;
   text-align: center;
 }
-.page-internship .content-wrap .internship-title span {
+.page-internship .content-wrapper .internship-title span {
   background: #fff;
   position: relative;
   top: -0.7em;
@@ -1809,39 +1809,38 @@ td {
   font-size: 1.4em;
   padding: 0 10px;
 }
-.page-internship .content-wrap .divide {
+.page-internship .content-wrapper .divide {
   vertical-align: top;
   width: 620px;
   display: inline-block;
 }
-.page-internship .content-wrap .pic-container {
+.page-internship .content-wrapper .pic-container {
   width: 1250px;
   margin-top: 20px;
 }
-.page-internship .content-wrap .pic {
+.page-internship .content-wrapper .pic {
   min-height: 300px;
   width: 413px;
   background-color: #efefef;
   display: inline-block;
 }
-.page-internship .content-wrap .directIntro {
+.page-internship .content-wrapper .directIntro {
   width: 1250;
   margin-top: 30px;
 }
-.page-internship .content-wrap .one-third {
+.page-internship .content-wrapper .one-third {
   vertical-align: top;
   padding: 5px 30px;
   width: 350px;
   display: inline-block;
 }
-.page-internship .content-wrap .one-third img {
+.page-internship .content-wrapper .one-third img {
   width: 350px;
   height: 300px;
 }
-.page-internship .content-wrap .one-third a {
+.page-internship .content-wrapper .one-third a {
   text-decoration: none;
-  font-size: 1.2em;
-  font-weight: bold;
+  font-size: 1em;
   color: #444;
   margin-top: 10px;
   margin-left: 80px;
@@ -1871,11 +1870,9 @@ td {
   color: #444;
 }
 .page-internship a {
-  margin: 15px;
   text-decoration: none;
   color: #444;
-  font-size: 1.2em;
-  font-weight: bold;
+  font-size: 1em;
   float: right;
 }
 .navigator {
@@ -2330,6 +2327,13 @@ td {
   line-height: 40px;
   font-size: 1em;
   color: #444;
+}
+.page-recruit a {
+  margin: 15px;
+  text-decoration: none;
+  color: #444;
+  font-size: 1em;
+  float: right;
 }
 .page-recruit h2 {
   font-size: 1.4em;
