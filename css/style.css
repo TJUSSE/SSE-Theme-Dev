@@ -1323,8 +1323,14 @@ td {
   font-size: 1.15em;
   line-height: 2.5em;
 }
+.footer-list-title a {
+  color: #fff;
+}
 .footer-list-item {
   line-height: 1.6em;
+}
+.footer-list-item a {
+  color: #d3d3d3;
 }
 .news-footer-author {
   margin-top: 30px;
@@ -1475,10 +1481,17 @@ td {
   width: 100%;
   height: 100%;
 }
+.page-index ul a {
+  display: block;
+  width: 100%;
+  height: 35px;
+  line-height: 35px;
+  -webkit-transition: all 0.2s linear;
+          transition: all 0.2s linear;
+}
 .page-index li {
   overflow: hidden;
   padding-left: 15px;
-  line-height: 28px;
   font-size: 1.05em;
   line-height: 35px;
   height: 35px;
@@ -1490,7 +1503,7 @@ td {
 }
 .page-index li:hover {
   background: rgba(0,0,0,0.65);
-  color: #2267d9;
+  color: #2267d9 !important;
 }
 .page-index .list-item-primary {
   padding-left: 15px;
@@ -1563,6 +1576,12 @@ td {
 }
 .page-index .blue-line-activated {
   width: 100%;
+}
+.page-index a {
+  color: #fff;
+}
+.page-index li a:hover {
+  color: #2267d9;
 }
 .info-content .info-deadline {
   display: block;
@@ -2138,7 +2157,7 @@ td {
   width: 562px;
   height: 300px;
 }
-table {
+.page-personaltraining table {
   margin-top: 40px;
   line-height: 50px;
   color: #444;
@@ -2146,10 +2165,10 @@ table {
   text-align: left;
   width: 100%;
 }
-th {
+.page-personaltraining th {
   background-color: #efefef;
 }
-p {
+.page-personaltraining p {
   line-height: 40px;
   font-size: 1.2em;
   color: #444;
